@@ -2,10 +2,14 @@
 abstract class HtmlPage{
 
   protected $title;
+  protected $content;
 
   function __construct($title){
     $this->title = $title;
+    $this->setContent();
   }
+
+  abstract function setContent();
 
   protected function renderTemplate($template_path, $data) {
     extract($data);
@@ -17,7 +21,7 @@ abstract class HtmlPage{
   }
 
   function getPage(){
-    $page = $this->renderTemplate('views/layout.php',['pageName' => $this->title]);
+    $page = $this->renderTemplate('views/layout.php',['pageName' => $this->title,'content' => $this->content]);
 
     return $page;
   }

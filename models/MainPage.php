@@ -3,8 +3,8 @@
 
 
     class MainPage extends HtmlPage {
-        function setContent($content){
-
+        function setContent(){
+            $this->content = $this->renderTemplate('views/Hello.php',[]);
         }
 
         function setHeader(){
