@@ -1,10 +1,10 @@
 <?php
     require_once("HtmlPage.php");
 
-    class MainPage extends HtmlPage {
+    class NewsPage extends HtmlPage {
 
         function setContent(){
-            $this->content = $this->renderTemplate('views/Main.php',[]);
+            $this->content = $this->renderTemplate('views/news.php',[]);
         }
 
         function setHeader(){
