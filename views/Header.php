@@ -1,5 +1,12 @@
-<div style="width: auto; border: 1px solid black">
-    <div style="text-align: center">
-        <H1 style="color:#B70094">Paws and Tails</H1>
+<div class="gradient-rectangle">
+        <div class="centered-buttons">
+            <button class="button">PAT</button>
+            <button class="button">JAUNUMI</button>
+            <button class="button">VEIKALI</button>
+            <button class="button">KONTAKTI</button>
+            <button class="button">ZIEDOT</button>
+        </div>
+        <div class="image-container ">
+            <img src="PAT.png" alt="picture">
+        </div>
     </div>
-</div>
