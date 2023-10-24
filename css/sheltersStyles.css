@@ -94,3 +94,12 @@ h1 {
 .leaflet-popup .leaflet-popup-tip {
   background-color: #C622E1;
 }
+
+/* .shelter-popup .leaflet-popup-content-wrapper {
+  
+} */
+
+.location-popup .leaflet-popup-content-wrapper {
+  background-color: #732DD9;
+  color: white;
+}
