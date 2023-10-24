@@ -8,13 +8,21 @@ html, body {
     width: 100%;
     height: 200px;
     position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .centered-buttons {
-    position: absolute;
     top: 50%;
-    left: 50%;
+    left:55%;
     transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.right-buttons {
+    top: 60%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 .button {
@@ -27,6 +35,16 @@ html, body {
     font-weight: bold;
     color: #ffffff;
     line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button.login{
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
 }
 
 .button:hover {
@@ -34,7 +52,49 @@ html, body {
 }
 
 .image-container {
+    position: absolute;
     top: 0;
     left: 0;
     padding: 10px; 
+}
+
+.image-glob{
+    position: absolute;
+    bottom: 21%;
+    right: 2.5%;
+    padding: 5px;
+    display: inline-block;
+}
+
+.language-popup {
+    display: none;
+    position: absolute;
+    bottom: 10;
+    right: 0;
+    background-color: #ffffff;
+    border: 2px solid #732DD9;
+    padding: 10px;
+    z-index: 1;
+    width: 170px;
+    height: 100px;
+}
+
+.image-glob:hover .language-popup {
+    display: block;
+}
+
+.language-popup ul {
+    list-style: none; 
+}
+
+.language-popup li {
+    display: flex; 
+    align-items: center; 
+    margin: 5px 0; 
+}
+
+.language-popup img {
+    border: 1px solid #000000;
+    width: 20px; 
+    margin-right: 10px; 
 }
