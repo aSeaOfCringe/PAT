@@ -33,7 +33,7 @@
         
         $server = "localhost";
         $user = "root";
-        $password = "";
+        $password = "1989";
         $database = "pat";
 
         if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
@@ -57,6 +57,7 @@
         if(!$result){
           die("Invalid query: " . $connection->error);
         }
+
 
         // while($row = $result->fetch_assoc()){
         //   echo "<li>
