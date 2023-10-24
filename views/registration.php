@@ -11,15 +11,15 @@
         }
         #action_form {
             position: absolute;
-            width: 400px; /* Увеличил ширину формы */
+            width: 400px;
             left: 50%;
-            top: 50%;
+            top: 30%; /* Изменил значение top */
             margin-left: -200px;
             text-align: center;
-            background-color: #fff; /* Белый фон формы */
-            padding: 30px; /* Увеличил отступы внутри формы */
-            border-radius: 10px; /* Закруглил углы формы */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень для формы */
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         form {
             padding: 25px;
