@@ -1,3 +1,4 @@
+
 <!-- ! and tab -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,15 +28,49 @@
 <div id="wrapper">
     <div class="sidebar">
       <ul class="shelters">
-        <li class="workout workout--running" data-id="1234567890">
+        <?php
+        
+        
+        $server = "localhost";
+        $user = "root";
+        $password = "";
+        $database = "pat";
 
-          <div class="division">
-            <h1>The shelter</h1>
-            <p class="description">This is the infromation about the shelter.</p>
-            <p class="more">more...</p>
-          </div>
+        if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
+          echo 'We don\'t have mysqli!!!';
+      } else {
+          echo 'Phew we have it!';
+      }
+        //Create connection
+        $connection = new mysqli($server, $user, $password, $database) or die("Cannot conect to database pat");
+        
 
-        </li>
+        //check connection
+        if ($connection->connect_error){
+          die("Savienojums neizdevās: " . $connection->connect_error);
+        }
+
+        //Read all data from table
+        $sql = "SELECT nosaukums, adrese FROM patversmes";
+        $result = $connection->query($sql);
+
+        if(!$result){
+          die("Invalid query: " . $connection->error);
+        }
+
+        // while($row = $result->fetch_assoc()){
+        //   echo "<li>
+
+        //   <div class='division'>
+        //     <h1>" . $row['nosaukums'] . "</h1>
+        //     <p class='description'>" . $row['adrese'] . "</p>
+        //     <p class='more'>more...</p>
+        //   </div>
+
+        // </li>";
+        // }
+        
+        ?>
 
         <li class="workout workout--running" data-id="1234567890">
 
