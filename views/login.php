@@ -7,19 +7,21 @@
             width: 100%;
             height: 100%;
             margin: 0;
-            background-color: #f2f2f2; /* Светло-серый фон */
+            background-image: url('css/back.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
         }
         #action_form {
             position: absolute;
-            width: 400px; /* Увеличил ширину формы */
+            width: 400px; 
             left: 50%;
-            top: 50%;
+            top: 30%;
             margin-left: -200px;
             text-align: center;
-            background-color: #fff; /* Белый фон формы */
-            padding: 30px; /* Увеличил отступы внутри формы */
-            border-radius: 10px; /* Закруглил углы формы */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень для формы */
+            background-color: #fff; 
+            padding: 30px;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         }
         form {
             padding: 25px;
@@ -34,11 +36,11 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
-            border: 2px solid #6f42c1; /* Фиолетовая обводка */
+            border: 2px solid #6f42c1; 
             border-radius: 5px;
             box-sizing: border-box;
             font-size: 16px;
-            outline: none; /* Убрал стандартную обводку */
+            outline: none; 
         }
         .button-wrapper {
             text-align: center;
@@ -46,14 +48,14 @@
         }
         .button-wrapper .purple-button {
             display: inline-block;
-            width: 150px; /* Установил фиксированную ширину кнопки */
+            width: 150px;
             padding: 10px 20px;
             background-color: #6f42c1;
             color: #fff;
             text-decoration: none;
             border: none;
             border-radius: 5px;
-            margin: 5px 10px; /* Убрал auto */
+            margin: 5px 10px;
             cursor: pointer;
             transition: background-color 0.3s;
             font-family: inherit;
@@ -68,7 +70,7 @@
             text-decoration: none;
             font-family: inherit;
             display: block;
-            margin-top: 10px; /* Увеличил отступ */
+            margin-top: 10px; 
         }
         .button-wrapper a.purple-link:hover {
             color: #5a3f99;
