@@ -88,10 +88,10 @@
             <input type="submit" class="purple-button" value="Ielogoties">
         </div>
         <div class="button-wrapper">
-            <a href="registration" class="purple-button">Reģistrēties</a>
+            <a href="register" class="purple-button">Reģistrēties</a>
         </div>
         <div class="button-wrapper">
-            <a href="restore_password" class="purple-link">Aizmirsāt paroli?</a>
+            <a href="restorePassword" class="purple-link">Aizmirsāt paroli?</a>
         </div>
     </form>
 </div>
