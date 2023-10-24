@@ -14,12 +14,12 @@ if (navigator.geolocation) {
         // const latitude = position.coords.latitude;
         // const longitude = position.coords.longitude;
 
-        console.log(position);
+        // console.log(position);
 
-        const coords = [latitude, longitude];
+        // const coords = [latitude, longitude];
         const coordsKipsala = [56.95237103380218, 24.07861953209933];
 
-        var map = L.map('map').setView(coordsKipsala, 8);
+        var map = L.map('map').setView(coordsKipsala, 11);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
