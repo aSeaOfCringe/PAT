@@ -11,8 +11,8 @@ let coordsLng = [24.049200662617682, 24.25418043822159, 24.34815930093005, 24.34
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
 
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
+        // const latitude = position.coords.latitude;
+        // const longitude = position.coords.longitude;
 
         console.log(position);
 
