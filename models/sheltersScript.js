@@ -56,29 +56,29 @@ if (navigator.geolocation) {
             .setPopupContent('Ķīpsala')
             .openPopup();
 
-        map.on('click', function (mapEvent) {
-            console.log(mapEvent);
-            const { lat, lng } = mapEvent.latlng;
+        // map.on('click', function (mapEvent) {
+        //     console.log(mapEvent);
+        //     const { lat, lng } = mapEvent.latlng;
 
-            L.marker([lat, lng])
-                .addTo(map)
-                .bindPopup(L.popup({
-                    maxWidth: 250,
-                    minWidth: 100,
-                }))
-                .setPopupContent(`lat${lat}, lng${lng}`)
-                .openPopup();
+        //     L.marker([lat, lng])
+        //         .addTo(map)
+        //         .bindPopup(L.popup({
+        //             maxWidth: 250,
+        //             minWidth: 100,
+        //         }))
+        //         .setPopupContent(`lat${lat}, lng${lng}`)
+        //         .openPopup();
 
-            // marker.bindPopup("Popup content");
-            // marker.on('mouseover', function (e) {
-            //     this.openPopup();
-            // });
+        //     // marker.bindPopup("Popup content");
+        //     // marker.on('mouseover', function (e) {
+        //     //     this.openPopup();
+        //     // });
 
-            // marker.on('mouseout', function (e) {
-            //     this.closePopup();
-            // });
+        //     // marker.on('mouseout', function (e) {
+        //     //     this.closePopup();
+        //     // });
 
-        });
+        // });
 
     }, function () {
         alert(`Nevar noteikt atrašanās vietu`);

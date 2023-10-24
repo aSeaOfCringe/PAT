@@ -44,7 +44,7 @@
     <link href="css\sheltersStyles.css" rel="stylesheet" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <!-- <link rel="shortcut icon" type="image/png" href="/icon.png" /> -->
 
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
@@ -85,7 +85,7 @@
           <div class="division">
             <h1>Animal Friend</h1>
             <p class="description">Fridriha Candera iela 4, Zemgales priekšpilsēta, Rīga, LV-1046</p>
-            <p class="more">more...</p>
+            <a href='shelter'><p class="more">vairāk...</p></a>
           </div>
 
         </li>
@@ -95,7 +95,7 @@
           <div class="division">
             <h1>Juglas Dzivnieku aizsardzibas grupa</h1>
             <p class="description">Mežapurva iela 2, Vidzemes priekšpilsēta, Rīga, LV-1064</p>
-            <p class="more">more...</p>
+            <a href='shelter'><p class="more">vairāk...</p></a>
           </div>
 
         </li>
@@ -105,7 +105,7 @@
           <div class="division">
             <h1>Ulubele dzīvnieku patversme Līči</h1>
             <p class="description">Ozolaine, Stopiņu pagasts, Ropažu novads, LV-2118</p>
-            <p class="more">more...</p>
+            <a href='shelter'><p class="more">vairāk...</p></a>
           </div>
 
         </li>
@@ -115,7 +115,7 @@
           <div class="division">
             <h1>Rigas pilsetas Dzivnieku patversme</h1>
             <p class="description">Ozolaine, Līči, Stopiņu pagasts, Ropažu novads, LV-2118</p>
-            <p class="more">more...</p>
+            <a href='shelter'><p class="more">vairāk...</p></a>
           </div>
 
         </li>
@@ -125,7 +125,7 @@
           <div class="division">
             <h1>Dzīvnieku Patversme Mežavairogi</h1>
             <p class="description">Ķekava Parish, Ķekava Municipality, LV-2123</p>
-            <p class="more">more...</p>
+            <a href='shelter'><p class="more">vairāk...</p></a>
           </div>
 
         </li>
