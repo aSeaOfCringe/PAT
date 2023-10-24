@@ -149,7 +149,3 @@ VALUES (
         55.89608829940356,
         26.53059840202332
     );
-SELECT *
-FROM patversmes;
-delete from patversmes
-where id > 5;
