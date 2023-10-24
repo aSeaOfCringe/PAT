@@ -14,23 +14,23 @@
         </div>
 
         <div class="image-container">
-            <a href="\"><img src="PAT.png" alt="picture"></a>
+            <a href="\"><img src="img/PAT.png" alt="picture"></a>
         </div>
 
         <div class= "image-glob">
-            <img src="glob.png" alt="glob">
+            <img src="img/glob.png" alt="glob">
                 <div class="language-popup">
                     <ul>
                         <li>
-                         <img src="english-flag.png" alt="English Flag">
+                         <img src="img/english-flag.png" alt="English Flag">
                          <a href="">English</a>
                         </li>
                         <li>
-                         <img src="latvian-flag.png" alt="Latvian Flag">
+                         <img src="img/latvian-flag.png" alt="Latvian Flag">
                          <a href="">Latviešu</a>
                         </li>
                         <li>
-                         <img src="russian-flag.png" alt="Russian Flag">
+                         <img src="img/russian-flag.png" alt="Russian Flag">
                          <a href="">Руский</a>
                         </li>
                     </ul>

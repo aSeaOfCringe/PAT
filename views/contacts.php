@@ -3,13 +3,13 @@
 <div>
     <p class="text" >Sazinies ar mums</p>
     <div class="images-phone">
-            <img src="phone.png" alt="Phone">
+            <img src="img/phone.png" alt="Phone">
     </div>
     <div class="images-pin">
-            <img src="pin.png" alt="Map pin">
+            <img src="img/pin.png" alt="Map pin">
     </div>
     <div class="images-message">
-            <img src="message.png" alt="Message">
+            <img src="img/message.png" alt="Message">
     </div>
     <p class="text service">Klientu apkalpošanas daļa</p>
     <p class="text adress">Mūsu adrese</p>

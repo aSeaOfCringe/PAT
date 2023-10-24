@@ -20,13 +20,13 @@
 <link href="css\stylesMain.css" rel="stylesheet" />
 <div>        
     <div class="images-paw">
-            <a href="news"><img src="paw.png" alt="Adoption"></a>
+            <a href="news"><img src="img/paw.png" alt="Adoption"></a>
     </div>
     <div class="images-search">
-            <a href="news"><img src="search.png" alt="Lost pet"></a>
+            <a href="news"><img src="img/search.png" alt="Lost pet"></a>
     </div>
     <div class="images-shelter">
-            <a href="shelters"><img src="shelter.png" alt="Shelters"></a>
+            <a href="shelters"><img src="img/shelter.png" alt="Shelters"></a>
     </div>
    
     <p class="adopt" >Adoptēt</p>
