@@ -1,0 +1,79 @@
+body{
+    background-image: url('back.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+.text{
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: bold;
+    color: #732DD9;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.text.service{
+    top: 55%;  
+    left: 14%;
+    font-size: 25px;
+}
+
+.text.adress{
+    top: 55%;  
+    left: 45%;
+    font-size: 25px;
+}
+
+.text.message{
+    top: 55%;  
+    left: 73%;
+    font-size: 25px;
+}
+
+.black{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    position: absolute;
+    top: 61%;
+    left: 20%;
+}
+
+.black.adress{
+    left: 42%;
+}
+
+.black.adress2{
+    top: 65%;
+    left: 44%;
+}
+
+.black.message{
+    left: 73%;
+}
+
+.images-phone{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    padding: auto;
+    
+}
+
+.images-pin{
+    position: absolute;
+    top: 45%;
+    left: 47%;
+}
+
+.images-message{
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
