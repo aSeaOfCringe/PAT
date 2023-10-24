@@ -1,3 +1,34 @@
+<?php
+
+  // $server = "localhost";
+  //   $user = "root";
+  //   $password = "";
+  //   $database = "pat";
+
+  // if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
+  //         echo 'We don\'t have mysqli!!!';
+  //     } else {
+  //         echo 'Phew we have it!';
+  //     }
+  //       //Create connection
+  //       $connection = new mysqli($server, $user, $password, $database) or die("Cannot conect to database pat");
+        
+    
+  //       //check connection
+  //       if ($connection->connect_error){
+  //         die("Savienojums neizdevās: " . $connection->connect_error);
+  //       }
+    
+  //       //Read all data from table
+  //       $sql = "SELECT nosaukums, adrese FROM patversmes";
+  //       $result = $connection->query($sql);
+    
+  //       if(!$result){
+  //         die("Invalid query: " . $connection->error);
+  //       }
+
+?>
+
 
 <!-- ! and tab -->
 <!DOCTYPE html>
@@ -29,34 +60,6 @@
     <div class="sidebar">
       <ul class="shelters">
         <?php
-        
-        
-        $server = "localhost";
-        $user = "root";
-        $password = "1989";
-        $database = "pat";
-
-        if (!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
-          echo 'We don\'t have mysqli!!!';
-      } else {
-          echo 'Phew we have it!';
-      }
-        //Create connection
-        $connection = new mysqli($server, $user, $password, $database) or die("Cannot conect to database pat");
-        
-
-        //check connection
-        if ($connection->connect_error){
-          die("Savienojums neizdevās: " . $connection->connect_error);
-        }
-
-        //Read all data from table
-        $sql = "SELECT nosaukums, adrese FROM patversmes";
-        $result = $connection->query($sql);
-
-        if(!$result){
-          die("Invalid query: " . $connection->error);
-        }
 
 
         // while($row = $result->fetch_assoc()){
@@ -73,21 +76,55 @@
         
         ?>
 
-        <li class="workout workout--running" data-id="1234567890">
+        <li data-id="1">
+
+          <script>
+            setMarker(56.9412114762812, 24.049200662617682, 'Animal Friend');
+          </script>
 
           <div class="division">
-            <h1>The shelter</h1>
-            <p class="description">This is the infromation about the shelter.</p>
+            <h1>Animal Friend</h1>
+            <p class="description">Fridriha Candera iela 4, Zemgales priekšpilsēta, Rīga, LV-1046</p>
             <p class="more">more...</p>
           </div>
 
         </li>
 
-        <li class="workout workout--running" data-id="1234567890">
+        <li  data-id="2">
 
           <div class="division">
-            <h1>The shelter</h1>
-            <p class="description">This is the infromation about the shelter.</p>
+            <h1>Juglas Dzivnieku aizsardzibas grupa</h1>
+            <p class="description">Mežapurva iela 2, Vidzemes priekšpilsēta, Rīga, LV-1064</p>
+            <p class="more">more...</p>
+          </div>
+
+        </li>
+
+        <li data-id="3">
+
+          <div class="division">
+            <h1>Ulubele dzīvnieku patversme Līči</h1>
+            <p class="description">Ozolaine, Stopiņu pagasts, Ropažu novads, LV-2118</p>
+            <p class="more">more...</p>
+          </div>
+
+        </li>
+
+        <li data-id="4">
+
+          <div class="division">
+            <h1>Rigas pilsetas Dzivnieku patversme</h1>
+            <p class="description">Ozolaine, Līči, Stopiņu pagasts, Ropažu novads, LV-2118</p>
+            <p class="more">more...</p>
+          </div>
+
+        </li>
+
+        <li data-id="5">
+
+          <div class="division">
+            <h1>Dzīvnieku Patversme Mežavairogi</h1>
+            <p class="description">Ķekava Parish, Ķekava Municipality, LV-2123</p>
             <p class="more">more...</p>
           </div>
 
