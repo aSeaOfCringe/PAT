@@ -5,9 +5,6 @@ let shelters = ['Animal Friend', 'Juglas Dzivnieku aizsardzibas grupa', 'Ulubele
 let coordsLat = [56.9412114762812, 56.96950354102735, 56.9547029181603, 56.9547029181603, 56.81175049717983];
 let coordsLng = [24.049200662617682, 24.25418043822159, 24.34815930093005, 24.34815930093005, 24.300066953780128];
 
-// const form = document.querySelector('.form');
-// const containerWorkouts = document.querySelector('.workouts');
-
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
 
@@ -59,29 +56,29 @@ if (navigator.geolocation) {
             .setPopupContent('Ķīpsala')
             .openPopup();
 
-        // map.on('click', function (mapEvent) {
-        //     console.log(mapEvent);
-        //     const { lat, lng } = mapEvent.latlng;
+        map.on('click', function (mapEvent) {
+            console.log(mapEvent);
+            const { lat, lng } = mapEvent.latlng;
 
-        //     L.marker([lat, lng])
-        //         .addTo(map)
-        //         .bindPopup(L.popup({
-        //             maxWidth: 250,
-        //             minWidth: 100,
-        //         }))
-        //         .setPopupContent(`lat${lat}, lng${lng}`)
-        //         .openPopup();
+            L.marker([lat, lng])
+                .addTo(map)
+                .bindPopup(L.popup({
+                    maxWidth: 250,
+                    minWidth: 100,
+                }))
+                .setPopupContent(`lat${lat}, lng${lng}`)
+                .openPopup();
 
-        //     // marker.bindPopup("Popup content");
-        //     // marker.on('mouseover', function (e) {
-        //     //     this.openPopup();
-        //     // });
+            // marker.bindPopup("Popup content");
+            // marker.on('mouseover', function (e) {
+            //     this.openPopup();
+            // });
 
-        //     // marker.on('mouseout', function (e) {
-        //     //     this.closePopup();
-        //     // });
+            // marker.on('mouseout', function (e) {
+            //     this.closePopup();
+            // });
 
-        // });
+        });
 
     }, function () {
         alert(`Nevar noteikt atrašanās vietu`);

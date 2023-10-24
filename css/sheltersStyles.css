@@ -29,18 +29,18 @@ a:visited {
 h1 {
 
   color: #732DD9;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 
 }
 
 .description {
   margin-top: 15px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .more {
   color: #B996EC;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .division {
@@ -51,11 +51,11 @@ h1 {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
 
-  width: 19rem;
+  width: 33rem;
 }
 
 .sidebar {
-  flex-basis: 25rem;
+  flex-basis: 40rem;
   /* padding: 3rem 5rem 4rem 5rem; */
   display: flex;
   flex-direction: column;
