@@ -8,62 +8,62 @@ let coordsLng = [24.049200662617682, 24.25418043822159, 24.34815930093005, 24.34
 // const form = document.querySelector('.form');
 // const containerWorkouts = document.querySelector('.workouts');
 
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
+// if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(function (position) {
 
-        // const latitude = position.coords.latitude;
-        // const longitude = position.coords.longitude;
+// const latitude = position.coords.latitude;
+// const longitude = position.coords.longitude;
 
-        // console.log(position);
+// console.log(position);
 
-        // const coords = [latitude, longitude];
-        const coordsKipsala = [56.95237103380218, 24.07861953209933];
+// const coords = [latitude, longitude];
+const coordsKipsala = [56.95237103380218, 24.07861953209933];
 
-        var map = L.map('map').setView(coordsKipsala, 11);
+var map = L.map('map').setView(coordsKipsala, 11);
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
-        let marker;
-        for (let i = 0; i < shelters.length; i++) {
-            marker = new L.marker([coordsLat[i], coordsLng[i]]).addTo(map)
-                .bindPopup(shelters[i])
-                .openPopup();
+let marker;
+for (let i = 0; i < shelters.length; i++) {
+    marker = new L.marker([coordsLat[i], coordsLng[i]]).addTo(map)
+        .bindPopup(shelters[i])
+        .openPopup();
 
-        }
-
-        marker = L.marker(coordsKipsala).addTo(map)
-            .bindPopup('Current location')
-            .openPopup();
-
-        // map.on('click', function (mapEvent) {
-        //     console.log(mapEvent);
-        //     const { lat, lng } = mapEvent.latlng;
-
-        //     L.marker([lat, lng])
-        //         .addTo(map)
-        //         .bindPopup(L.popup({
-        //             maxWidth: 250,
-        //             minWidth: 100,
-        //         }))
-        //         .setPopupContent(`lat${lat}, lng${lng}`)
-        //         .openPopup();
-
-        //     // marker.bindPopup("Popup content");
-        //     // marker.on('mouseover', function (e) {
-        //     //     this.openPopup();
-        //     // });
-
-        //     // marker.on('mouseout', function (e) {
-        //     //     this.closePopup();
-        //     // });
-
-        // });
-
-    }, function () {
-        alert(`Nevar noteikt atrašanās vietu`);
-    });
 }
+
+marker = L.marker(coordsKipsala).addTo(map)
+    .bindPopup('Current location')
+    .openPopup();
+
+// map.on('click', function (mapEvent) {
+//     console.log(mapEvent);
+//     const { lat, lng } = mapEvent.latlng;
+
+//     L.marker([lat, lng])
+//         .addTo(map)
+//         .bindPopup(L.popup({
+//             maxWidth: 250,
+//             minWidth: 100,
+//         }))
+//         .setPopupContent(`lat${lat}, lng${lng}`)
+//         .openPopup();
+
+//     // marker.bindPopup("Popup content");
+//     // marker.on('mouseover', function (e) {
+//     //     this.openPopup();
+//     // });
+
+//     // marker.on('mouseout', function (e) {
+//     //     this.closePopup();
+//     // });
+
+// });
+
+// }, function () {
+//     alert(`Nevar noteikt atrašanās vietu`);
+// });
+// }
 
 
