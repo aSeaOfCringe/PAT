@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+a:link,
+a:visited {
+    color: #C622E1;
+}
+
+.search {
+    padding: 1.5rem;
+    font-size: 3.5rem;
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: 13rem;
+    background-color: #dddddd;
+    /* background-image: image-url('img\search.svg'); */
+    color: #732DD9;
+}
+
+.label {
+    /* position: relative; */
+    width: 2%;
+    height: 2%;
+    margin-top: 5rem;
+    margin-left: 400rem;
+}
+
+.label-before {
+    width: 1.8%;
+    height: 1.8%;
+    /* content: ""; */
+    position: relative;
+    left: 85%;
+    top: 0;
+    bottom: 0;
+    background: url("img\search.svg") center / contain no-repeat;
+}
+
+::placeholder {
+    color: #732DD9;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: #732DD9;
+}
+
+.fake-label {
+    float: right;
+    width: 2.5%;
+    height: 2.5%;
+    /* position: relative; */
+    left: 85%;
+    margin-top: 5.5rem;
+    margin-right: 18rem;
+    top: 0;
+    bottom: 0;
+    background: url("img\list.svg") center / contain no-repeat;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
