@@ -13,7 +13,14 @@ abstract class HtmlPage{
   }
 
   abstract function setContent();
-  abstract function setHeader();
+  function setHeader(){
+    if(isset($_SESSION['id'])){
+      $this->header = $this->renderTemplate('views/Header.php',['userName'=>$_SESSION['name'],'userSurname'=>$_SESSION['surname']]);
+    }else{
+      $this->header = $this->renderTemplate('views/Header.php',[]);
+    }
+     
+  }
 
   protected function renderTemplate($template_path, $data) {
     extract($data);

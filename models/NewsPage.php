@@ -7,10 +7,6 @@
             $this->content = $this->renderTemplate('views/news.php',[]);
         }
 
-        function setHeader(){
-            $this->header = $this->renderTemplate('views/Header.php',[]);
-        }
-
     }
 
 ?>
