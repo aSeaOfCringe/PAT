@@ -18,7 +18,7 @@
 <label for="search"><object data="img\search.svg" class="label-before" class = "label"> </object></label>
 
 <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
-<object data="img\list.svg" class="fake-label"> </object><br>
+<a href = "news"><img src="img\list.svg" class="fake-label"> </img></a><br>
 
     <h1>Animal friend</h1>
 
