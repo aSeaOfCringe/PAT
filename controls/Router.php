@@ -1,7 +1,7 @@
 <?php
 
 class Router {
-    function __construct() {
+    function __construct($db) {
         $pageURL = explode('/', $_SERVER['REQUEST_URI']);
         
         
@@ -39,6 +39,17 @@ class Router {
             case 'login':
                 require_once("models/LoginPage.php");
                 $Page = new LoginPage("Ielogoties");
+                
+                if(isset($_POST["btnLogin"])){
+                    $Page->login($db);
+                }
+
+                break;
+
+            case 'unlogin':
+                require_once("models/LoginPage.php");
+                $Page = new LoginPage("Ielogoties");
+                $Page->logout($db);
                 break;
 
             case 'profileChange':
@@ -55,6 +66,10 @@ class Router {
             case 'register':
                 require_once("models/RegisterPage.php");
                 $Page = new RegisterPage("Registracija");
+                
+                if(isset($_POST["btnRegister"])){
+                    $Page->registerNewProfile($db);
+                }
                 break;
 
             case 'restorePassword':

@@ -8,9 +8,6 @@
             $this->content = $this->renderTemplate('views/shelters.php',[]);
         }
 
-        function setHeader(){
-            $this->header = $this->renderTemplate('views/Header.php',[]);
-        }
 
     }
 
