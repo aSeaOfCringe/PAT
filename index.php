@@ -1,6 +1,5 @@
 <?php   
 
-
 class PATWebApplication {
 
     function __construct() {
@@ -9,7 +8,7 @@ class PATWebApplication {
     }
 
     function Run(){
-        //$db = new DBase();
+        $db = new DBase();
         $router = new Router();
     }
 
