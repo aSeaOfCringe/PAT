@@ -9,7 +9,6 @@ class PATWebApplication {
 
     function Run(){
         $db = new DBase();
-        $db->test();
         session_start();
         $router = new Router($db);
     }
