@@ -9,6 +9,7 @@ class Router {
             case 'news':
                 require_once("models/NewsPage.php");
                 $Page = new NewsPage("Jaunumi");
+                $Page->getData($db);
                 break;
                 
             case 'advertismentAdd':
