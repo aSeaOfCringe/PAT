@@ -13,7 +13,11 @@
             $DataQuery = "SELECT * FROM `sludinajumi`";
             $ResultQuery = mysqli_query($db->connection, $DataQuery);
 
-            $this->data = mysqli_fetch_array($ResultQuery);
+            $dataArray = [];
+            while($row = mysqli_fetch_array($ResultQuery)) {
+                $dataArray[] = $row;
+            }
+            $this->data = $dataArray;
             $this->setContent();
         }
 
