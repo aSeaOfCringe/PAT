@@ -9,6 +9,7 @@ class Router {
             case 'news':
                 require_once("models/NewsPage.php");
                 $Page = new NewsPage("Jaunumi");
+                $Page->getData($db);
                 break;
                 
             case 'advertismentAdd':
@@ -85,7 +86,10 @@ class Router {
 
             case 'shelters':
                 require_once("models/SheltersPage.php");
+
+                
                 $Page = new SheltersPage("Patversmes"); // TODO or not
+                $shelters = $Page->fetchShelters($db);
                 break;
 
             case 'shops':

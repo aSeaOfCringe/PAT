@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+a:link,
+a:visited {
+    color: #C622E1;
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #732DD9;
+    font-size: 4rem;
+    margin-top: 8rem;
+    margin-left: 14rem;
+    margin-bottom: 5rem;
+    -webkit-text-stroke: 1px #C622E1;
+    text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
+}
+
+/* .row {
+    padding: 2.5rem;
+} */
+
+.input {
+    font-size: 5rem;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-wrapper .purple-button {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #6f42c1;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: inherit;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.button-wrapper .purple-button:hover {
+    background-color: #5a3f99;
+}
+
+.button-wrapper a.purple-link {
+    color: #6f42c1;
+    text-decoration: none;
+    font-family: inherit;
+    display: block;
+    margin-top: 10px;
+}
+
+.button-wrapper a.purple-link:hover {
+    color: #5a3f99;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: left;
+}
+
+.column-one {
+    margin-left: 40rem;
+    float: left;
+    padding: 10rem;
+}
+
+.column-two {
+    margin-right: 40rem;
+    float: right;
+    padding: 10rem;
+}

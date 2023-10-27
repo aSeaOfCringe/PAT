@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter info</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
     <link href="css\shelterInfoStyle.css" rel="stylesheet" />
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- <script defer src="models/sheltersScript.js"></script> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
 </head>
 <body>
 <label for="search"><object data="img\search.svg" class="label-before" class = "label"> </object></label>
