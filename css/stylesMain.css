@@ -1,4 +1,4 @@
-@media screen and (max-width:1980px){
+
 body{
     background-image: url('back.jpg');
     background-size: cover; 
@@ -6,126 +6,15 @@ body{
     background-attachment: fixed; 
 }
 
-.images-paw{
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    padding: auto;
-    
-}
 
-.images-search{
-    position: absolute;
-    top: 43%;
-    left: 45%;
-}
-
-.images-shelter{
-    position: absolute;
-    top: 40%;
-    right: 15%;
-}
-
-.adopt{
+.text-PAT{
     font-family: Arial;
     font-size: 25px;
     font-weight: bold;
     color: #732DD9;
     line-height: 1.5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 67%;
-    left: 22%;
 }
 
-.lost{
-    font-family: Arial;
-    font-size: 25px;
-    font-weight: bold;
-    color: #732DD9;
-    line-height: 1.5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 67%;
-    left: 45%;
-}
 
-.shelter{
-    font-family: Arial;
-    font-size: 25px;
-    font-weight: bold;
-    color: #732DD9;
-    line-height: 1.5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 67%;
-    right: 16%;
-}
 
-}
-
-@media screen and (max-width:1366px){
-    body{
-        background-image: url('back.jpg');
-        background-size: cover; 
-        background-position: center; 
-        background-attachment: fixed; 
-    }
-    
-    .images-paw{
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        padding: auto;
-        
-    }
-    
-    .images-search{
-        position: absolute;
-        top: 43%;
-        left: 42%;
-    }
-    
-    .images-shelter{
-        position: absolute;
-        top: 40%;
-        right: 10%;
-    }
-    
-    .adopt{
-        font-family: Arial;
-        font-size: 25px;
-        font-weight: bold;
-        color: #732DD9;
-        line-height: 1.5;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 77%;
-        left: 20%;
-    }
-    
-    .lost{
-        font-family: Arial;
-        font-size: 25px;
-        font-weight: bold;
-        color: #732DD9;
-        line-height: 1.5;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 77%;
-        left: 43%;
-    }
-    
-    .shelter{
-        font-family: Arial;
-        font-size: 25px;
-        font-weight: bold;
-        color: #732DD9;
-        line-height: 1.5;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 77%;
-        right: 12%;
-    }
-    
-    }
