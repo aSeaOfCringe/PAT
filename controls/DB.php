@@ -2,10 +2,10 @@
 
 //git update-index --assume-unchanged controls/DB.php 
 Class DBase{
-        private $db_ip = "";
-        private $login = "";
-        private $psw = '';
-        private $db_name="";
+  private $db_ip = "sql11.freemysqlhosting.net";
+  private $login = "sql11656494";
+  private $psw = 'I6kLPHcA5G';
+  private $db_name="sql11656494";
 
         public $connection;
 
