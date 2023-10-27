@@ -1,0 +1,65 @@
+@media screen and (max-width:1366px){
+    body{
+        background-image: url('back.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    }
+
+    .text{
+        font-family: Arial;
+        font-size: 35px;
+        font-weight: bold;
+        color: #732DD9;
+        line-height: 1.5;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    .text.right{
+        left: 50%;
+    }
+
+    /* textbox */
+
+    .custom-select {
+        position: absolute;
+        width: 300px; 
+        margin: 10px;
+        border: 2px solid #732DD9; 
+        top: 52%;
+        left: 4%;
+      }
+   
+      #textBox {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        outline: none;
+      }
+
+      .custom-select:focus-within .options {
+        display: block;
+      }
+            
+      .options {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        background-color: white;
+
+      }
+      
+      li {
+        cursor: pointer;
+        padding: 5px;
+      }
+      
+      li:hover {
+        background-color: #C622E1; 
+      }
+      
+}
