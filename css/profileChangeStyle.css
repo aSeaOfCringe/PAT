@@ -34,9 +34,20 @@ h1 {
     padding: 2.5rem;
 } */
 
-.input {
-    font-size: 5rem;
+input[type=text] {
+    font-size: 2rem;
+    color: #888888;
+    height: 3.5rem;
+    width: 40rem;
+    float: right;
+    box-sizing: border-box;
+    border: 1px solid #732DD9;
+    box-shadow: 3px 3px 3px #D5C0F4;
 }
+
+/* input[type=text]:focus {
+    border: 3px solid #732DD9;
+} */
 
 .button-wrapper {
     text-align: center;
@@ -76,19 +87,49 @@ h1 {
     color: #5a3f99;
 }
 
-.profile-pic {
+/* .profile-pic {
     display: flex;
     justify-content: left;
-}
+} */
 
-.column-one {
-    margin-left: 40rem;
+.collumn-one {
     float: left;
-    padding: 10rem;
+    margin-left: 30rem;
+    margin-bottom: 20rem;
 }
 
-.column-two {
-    margin-right: 40rem;
+.collumn-two {
     float: right;
-    padding: 10rem;
+    margin-right: 35rem;
+}
+
+label {
+    font-size: 2rem;
+    text-align: right;
+    color: #888888;
+}
+
+.row {
+    padding: 1rem;
+}
+
+.hidden {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    top: 0.7rem;
+    bottom: 0;
+    background: url("img\eye.svg") center / contain no-repeat;
+}
+
+#curPassw {
+    left: 71%;
+}
+
+#newPassw {
+    left: 76.9%;
+}
+
+#repNewPassw {
+    left: 65.1%
 }

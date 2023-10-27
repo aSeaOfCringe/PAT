@@ -16,10 +16,15 @@
 </head>
 <body>
 
-<!-- meklētāja josla -->
-<label for="search"><object data="img\search.svg" class="label-before" class = "label"> </object></label>
-<input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
-<a href = "news"><img src="img\list.svg" class="fake-label"> </img></a><br>
+<!-- Start of search bar -->
+<div>
+  <div class="search-div">
+      <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
+  </div>
+  <a href = "news"><img src="img\search.svg" class = "label-search"/></img>
+    <a href = "news"><img src="img\list.svg" class="button-label"> </img></a><br>     
+</div>
+<!-- End of search bar -->
 
 <div class="row">
   <div class="column">
