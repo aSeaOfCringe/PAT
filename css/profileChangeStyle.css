@@ -22,10 +22,9 @@ body {
 
 h1 {
     color: #732DD9;
-    font-size: 4rem;
-    margin-top: 8rem;
-    margin-left: 14rem;
-    margin-bottom: 5rem;
+    font-size: 36px;
+    margin-top: 8%;
+    margin-bottom: 5%;
     -webkit-text-stroke: 1px #C622E1;
     text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
 }
@@ -55,19 +54,19 @@ input[type=text] {
 }
 
 .button-wrapper .purple-button {
-    display: inline-block;
-    width: 150px;
+    /* display: inline-block; */
+    width: 250px;
     padding: 10px 20px;
     background-color: #6f42c1;
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
     border: none;
     border-radius: 5px;
     margin: 5px 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: background-color 0.3s;
-    font-family: inherit;
-    box-sizing: border-box;
+    /* font-family: inherit; */
+    /* box-sizing: border-box; */
     font-size: 16px;
 }
 
@@ -87,24 +86,23 @@ input[type=text] {
     color: #5a3f99;
 }
 
-/* .profile-pic {
-    display: flex;
-    justify-content: left;
-} */
-
 .collumn-one {
     float: left;
-    margin-left: 30rem;
-    margin-bottom: 20rem;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-right: 15%;
 }
 
 .collumn-two {
-    float: right;
-    margin-right: 35rem;
+    /* float: right; */
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    justify-content: left;
 }
 
 label {
-    font-size: 2rem;
+    font-size: 20px;
     text-align: right;
     color: #888888;
 }
@@ -132,4 +130,51 @@ label {
 
 #repNewPassw {
     left: 65.1%
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+
+}
+
+.profile-pic-wrapper {}
+
+.btnEditProfile {
+    /* padding-top: 68%; */
+    height: 50px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btnEditProfile:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.editPhoto {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 20%;
 }

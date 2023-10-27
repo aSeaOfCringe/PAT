@@ -8,8 +8,8 @@
     <link href="css\profileChangeStyle.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Rediģēt profilu</h1>
     <div class="collumn-one">
+        <h1>Rediģēt profilu</h1>
         
         <div class="row">
             <label for="shelter">Patversmes nosaukums:</label>
@@ -65,14 +65,15 @@
 
     <div class="collumn-two">
 
-        <div class="profile-pic">
-            <object data="img\no-profile-picture-man.svg" width="300" height="300"> </object> 
+        <div class="profile-pic-wrapper">
+            <object data="img\no-profile-picture-man.svg" class= "profile-pic"> </object> 
         </div>
-
-
-        <div class="button-wrapper">
+        <object data="img\pencil-black-circle.svg" class="editPhoto"> </object> 
+        </br>
+        <a href="profile"><button  type="input" class="btnEditProfile" class="btn-grad">Saglabāt izmaiņas</button></a>
+        <!-- <div class="button-wrapper">
                 <input type="submit" name="btnEditProfile" class="purple-button" value="Saglabāt izmaiņas">
-        </div>
+        </div> -->
 
     </div>
     
