@@ -5,14 +5,14 @@
 
         public $shelters = [];
 
-        function startPage($DB){
-            $dbShelters = $this->fetchShelters($db);
-            setContent();
-        }
+        // function startPage($DB){
+        //     $dbShelters = $this->fetchShelters($db);
+        //     setContent();
+        // }
 
         function setContent(){
             
-            $this->content = $this->renderTemplate('views/shelters.php', $this->shelters);
+            $this->content = $this->renderTemplate('views/shelters.php', ['data' => $this->shelters]);
         }
 
         function fetchShelters($db){
@@ -25,8 +25,7 @@
                         'lat' =>$row['lat'],
                         'lng' =>$row['lng']]);
                 }
-            print_r($this->shelters);
-            return $this->shelters;
+            $this->setContent();
         }
 
     }

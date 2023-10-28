@@ -20,7 +20,7 @@ a:visited {
   overscroll-behavior-y: none;
 
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 1%;
 
   display: flex;
   overflow: hidden;
@@ -29,43 +29,41 @@ a:visited {
 h1 {
 
   color: #732DD9;
-  font-size: 2.5rem;
+  font-size: 34px;
 
 }
 
 .description {
   margin-top: 15px;
-  font-size: 2rem;
+  font-size: 24px;
 }
 
-.more {
+input {
   color: #B996EC;
-  font-size: 2rem;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
 
 .division {
-  padding: 1.5rem;
+  padding: 2.5%;
   border: #B996EC;
   border-style: solid;
-  border-width: 0.1rem;
-  border-radius: 0.3rem;
-  margin-bottom: 1rem;
+  border-width: 1px;
+  border-radius: 3px;
+  margin-bottom: 2.5%;
 
-  width: 33rem;
+  width: 350px;
 }
 
 .sidebar {
-  flex-basis: 40rem;
-  /* padding: 3rem 5rem 4rem 5rem; */
+  flex-basis: 400px;
   display: flex;
   flex-direction: column;
-
-  /* padding: 1.5rem; */
   width: min-content;
-
   overflow-y: scroll;
   overflow-x: hidden;
-  /* Match height and activity boxes */
   height: 100%;
   transition: all 0.5s, transform 1ms;
   float: left;

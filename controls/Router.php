@@ -82,6 +82,7 @@ class Router {
             case 'shelter':
                 require_once("models/ShelterPage.php");
                 $Page = new ShelterPage("Patversme, Nosaukums"); // TODO or not
+                $Page->fetchShelters($db);
                 break;
 
             case 'shelters':

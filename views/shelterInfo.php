@@ -19,21 +19,29 @@
     </div>
 <!-- End of search bar -->
 
-    <h1>Animal friend</h1>
-
-    <div class="left">
-    <object data="img\address.svg" class="img-svg"> </object><br>
-    <object data="img\phone-filled.svg" class="img-svg"> </object><br>
-    <object data="img\globe.svg" class="img-svg"> </object><br>
-    <object data="img\time.svg" class="img-svg"> </object><br>
-
-    </div>
-    <div class="right">
-    <p class="description">Fridriha Candera iela 4, Zemgales priekšpilsēta, Rīga, LV-1046</p>
-    <p class="description">67500491</p>
-    <p class="description">http://www.dzd.lv/</p>
-    <p class="description">Pirmdiena Slēgts<br>Otrdiena 11:00–17:00<br>Trešdiena 11:00–17:00<br>Ceturtdiena 11:00–17:00<br>Piektdiean 11:00–17:00<br>Sestdiena 11:00–17:00<br>Svētdiena 11:00–17:00</p>
-    </div>
+<?php
+    $var_value = $_SESSION['id'];
+    $i = $var_value - 1;
+    if(array_key_exists($i, $this->sh) && $this->sh[$i]['id'] === $var_value){
+        echo "<h1>" . $this->sh[$i]['nosaukums'] . "</h1>
+        <div class='left'>
+        <object data='img\address.svg' class='img-svg'> </object><br>
+        <object data='img\phone-filled.svg' class='img-svg'> </object><br>
+        <object data='img\globe.svg' class='img-svg'> </object><br>
+        <object data='img\time.svg' class='img-svg'> </object><br>
     
+        </div>
+        <div class='right'>
+        <p class='description'>" . $this->sh[$i]['adrese'] . "</p>
+        <p class='description'>" . $this->sh[$i]['telefons']. "</p>
+        <p class='description'>" . $this->sh[$i]['majaslapa'] . "</p>
+        <p class='description'>" . $this->sh[$i]['info'] . "</p>
+        </div>";
+    }
+    else{
+        echo '<script>alert("Informācija par patversmi nav atrasta \u{1F62D}")</script>';
+    }
+    
+?>
 </body>
 </html>
