@@ -8,12 +8,6 @@ html {
     box-sizing: border-box;
 }
 
-/* GENERAL */
-a:link,
-a:visited {
-    color: #C622E1;
-}
-
 body {
     background-image: url("back.jpg");
     background-size: cover;

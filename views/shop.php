@@ -25,17 +25,17 @@
     <a href = "news"><img src="img\list.svg" class="button-label"> </img></a><br>     
 </div>
 <!-- End of search bar -->
-
-<div class="row">
-  <div class="column">
-  <img src="img\list.svg" class="fake-label"> </img>
-
-  </div>
-
-  <div class="column">
-
-  </div>
-
+<div class="main-field">
+<?php
+          
+  foreach ($this->shops as $row) {
+    echo "<div class='shop'>
+      <img src='img\shops\\" . $row['logo'] . "' class='logo'> </img>
+      <a href=" . $row['majaslapa'] . " class='titles'><p>" . $row['nosaukums'] . "</p></a>
+    </div>
+    ";
+  }
+?> 
 </div>
     
 </body>

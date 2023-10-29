@@ -94,6 +94,7 @@ class Router {
             case 'shops':
                 require_once("models/ShopPage.php");
                 $Page = new ShopPage("Veikali"); // TODO or not
+                $Page->fetchShops($db);
                 break;
             
             default:
