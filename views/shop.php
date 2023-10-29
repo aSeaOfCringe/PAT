@@ -31,7 +31,7 @@
   foreach ($this->shops as $row) {
     echo "<div class='shop'>
       <img src='img\shops\\" . $row['logo'] . "' class='logo'> </img>
-      <a href=" . $row['majaslapa'] . " class='titles'><p>" . $row['nosaukums'] . "</p></a>
+      <a href=" . $row['majaslapa'] . " target='_blank' class='titles'><p>" . $row['nosaukums'] . "</p></a>
     </div>
     ";
   }

@@ -5,11 +5,6 @@
 
         public $shelters = [];
 
-        // function startPage($DB){
-        //     $dbShelters = $this->fetchShelters($db);
-        //     setContent();
-        // }
-
         function setContent(){
             
             $this->content = $this->renderTemplate('views/shelters.php', ['data' => $this->shelters]);

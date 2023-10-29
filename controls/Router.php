@@ -76,6 +76,10 @@ class Router {
             case 'restorePassword':
                 require_once("models/RestorePasswordPage.php");
                 $Page = new RestorePasswordPage("Atjaunot paroli");
+
+                if(isset($_POST["btnRestorePsw"])){
+                    $Page->restorePassword($db);
+                }
                 break;
 
 

@@ -84,13 +84,21 @@
     </style>
 </head>
 <body>
+
+<?php if ($errorInfo != "") { ?>
+    <div class="centeredErrorBox">
+        <b>Kļuda: </b>
+        <?= $errorInfo; ?>
+    </div>
+<?php } ?>
+
 <div id="action_form">
-    <form action="login" method="post">
+    <form action="restorePassword" method="post">
         <div class="restore-header">Atjaunot Paroli</div>
-        <label for="email">Ē-pasts</label>
+        <label for="email">E-pasts</label>
         <input name="email" id="email" type="text"><br><br>
         <div class="button-wrapper">
-            <input type="submit" class="purple-button" value="Atjaunot paroli">
+            <input type="submit" class="purple-button" value="Atjaunot paroli" name="btnRestorePsw">
         </div>
     </form>
 </div>
