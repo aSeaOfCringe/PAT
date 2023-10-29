@@ -24,23 +24,26 @@
                         <a class="nav-link buttonNav" href="donate"><button class="button">ZIEDOT</button></a>
                     </li>
             </div>
-            <div class="col-2 d-flex text-end justify-content-center align-items-center">
-                <?php if (!isset($_SESSION['id'])) { ?>
-
-                    <a class="nav-link buttonNav" href="login"><button class="button">Pieslēgties</button></a>
-
-                    <?php
-                } else {
-                    ?>
-
-                    <a class="nav-link buttonNav" href="unlogin"><button class="button login"> Labdien,
-                            <?= $userName . " " . $userSurname ?> , Iziet
-                        </button></a>;
-                    <?php
-                } ?>
-
+            <div class="col-3 d-flex justify-content-end">
+                
                 <div class="image-glob">
-                    <img class="image-fluid"  src="img/glob.png" alt="glob">
+
+                    <?php if (!isset($_SESSION['id'])) { ?>
+
+                        <a class="PatLinkLogin"  href="login">Pieslēgties</a>
+
+                        <?php
+                    } else {
+                        ?>
+
+                        Labdien,<a  class="PatLinkLogin"  href="profile"><b> <?= $userName . " " . $userSurname ?> !</b></a>
+                        <a class="PatLinkLogin"  href="unlogin">Iziet</a>
+                        <?php
+                    } ?>
+        
+
+
+                    <img class="image-fluid" src="img/glob.png" alt="glob">
                     <div class="language-popup">
                         <ul>
                             <li>
@@ -58,13 +61,14 @@
                         </ul>
                     </div>
                 </div>
-            
+
             </div>
             </ul>
         </div>
         <div class="col-1 text-end">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

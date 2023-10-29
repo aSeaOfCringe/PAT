@@ -9,7 +9,7 @@
             margin: 0;
             background-image: url('css/back.jpg'); 
             background-size: cover; 
-            background-repeat: no-repeat;
+            background-repeat: repeat;
         }
         #action_form {
             position: absolute;
