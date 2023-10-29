@@ -76,18 +76,21 @@ class Router {
             case 'restorePassword':
                 require_once("models/RestorePasswordPage.php");
                 $Page = new RestorePasswordPage("Atjaunot paroli");
+
+                if(isset($_POST["btnRestorePsw"])){
+                    $Page->restorePassword($db);
+                }
                 break;
 
 
             case 'shelter':
                 require_once("models/ShelterPage.php");
                 $Page = new ShelterPage("Patversme, Nosaukums"); // TODO or not
+                $Page->fetchShelters($db);
                 break;
 
             case 'shelters':
                 require_once("models/SheltersPage.php");
-
-                
                 $Page = new SheltersPage("Patversmes"); // TODO or not
                 $shelters = $Page->fetchShelters($db);
                 break;
@@ -95,6 +98,7 @@ class Router {
             case 'shops':
                 require_once("models/ShopPage.php");
                 $Page = new ShopPage("Veikali"); // TODO or not
+                $Page->fetchShops($db);
                 break;
             
             default:

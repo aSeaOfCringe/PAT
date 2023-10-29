@@ -1,3 +1,4 @@
+@media screen and (max-width:1980px){
 body{
     background-image: url('back.jpg');
     background-size: cover; 
@@ -76,4 +77,85 @@ body{
     position: absolute;
     top: 45%;
     right: 20%;
-}
+}}
+
+@media screen and (max-width:1366px){
+    body{
+        background-image: url('back.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    }
+    
+    .text{
+        font-family: Arial;
+        font-size: 35px;
+        font-weight: bold;
+        color: #732DD9;
+        line-height: 1.5;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+    
+    .text.service{
+        top: 70%;  
+        left: 13%;
+        font-size: 25px;
+    }
+    
+    .text.adress{
+        top: 70%;  
+        left: 47%;
+        font-size: 25px;
+    }
+    
+    .text.message{
+        top: 70%;  
+        left: 70%;
+        font-size: 25px;
+    }
+    
+    .black{
+        font-family: Arial;
+        font-size: 20px;
+        color: #000000;
+        line-height: 1.5;
+        position: absolute;
+        top: 76%;
+        left: 20%;
+    }
+    
+    .black.adress{
+        left: 42%;
+    }
+    
+    .black.adress2{
+        top: 80%;
+        left: 46%;
+    }
+    
+    .black.message{
+        left: 70%;
+    }
+    
+    .images-phone{
+        position: absolute;
+        top: 60%;
+        left: 20%;
+        padding: auto;
+        
+    }
+    
+    .images-pin{
+        position: absolute;
+        top: 60%;
+        left: 49%;
+    }
+    
+    .images-message{
+        position: absolute;
+        top: 60%;
+        right: 20%;
+    }}

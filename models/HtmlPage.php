@@ -4,12 +4,15 @@ abstract class HtmlPage{
   protected $title;
   protected $content;
 
+  protected $footer;
+
   protected $header;
 
   function __construct($title){
     $this->title = $title;
     $this->setContent();
     $this->setHeader();
+    $this->footer = $this->renderTemplate('views/Footer.php',[]);
   }
 
   abstract function setContent();
@@ -32,7 +35,7 @@ abstract class HtmlPage{
   }
 
   function getPage(){
-    $page = $this->renderTemplate('views/layout.php',['pageName' => $this->title,'header'=> $this->header,'content' => $this->content]);
+    $page = $this->renderTemplate('views/layout.php',['pageName' => $this->title,'header'=> $this->header,'content' => $this->content,'footer' => $this->footer]);
 
     return $page;
   }
