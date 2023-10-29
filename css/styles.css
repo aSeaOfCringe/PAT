@@ -264,3 +264,8 @@ body {
     text-decoration: underline;
     color: rgb(187, 187, 187);
 }
+
+.ContentOfPatPage{
+    min-height: 100vh;
+    position: relative;
+}
