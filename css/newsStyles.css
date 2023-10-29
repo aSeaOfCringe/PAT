@@ -60,23 +60,17 @@ body {
     padding-bottom: 0.5%;
     padding-left: 0.5%;
     font-size: 30px;
-    width: 104%;
+    width: 103%;
     background-color: #dddddd;
     border: #dddddd;
     color: #732DD9;
 }
 
-.button-label {
-    width: 40px;
-    height: 40px;
-    padding-left: 0.8%;
-    margin-top: 1.1%;
-}
-
-.label-search {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 0.2%;
+.btnSearch {
+    width: 4rem;
+    height: auto;
+    padding-left: 1%;
+    margin-top: 1.2%;
 }
 
 ::placeholder {
@@ -85,3 +79,82 @@ body {
 }
 
 /* End of search bar formatting */
+
+/* Start of animal grid formatting */
+.pet {
+    padding: 1%;
+    width: 350px;
+    text-align: center;
+    margin: 2%;
+    background-color: #FFFFFF;
+    height: 600px;
+    vertical-align: center;
+    background-color: #DEDFE1;
+    box-shadow: 5px 10px #888888;
+}
+
+.animal-pic {
+    max-width: 350px;
+    width: auto;
+    max-height: 250px;
+    height: auto;
+    padding-bottom: 4%;
+}
+
+.format-name {
+    float: left;
+    text-align: left;
+}
+
+.purpose {
+    color: #7AA355;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.animal-name {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.gender {
+    float: right;
+    height: 2rem;
+    width: 2rem;
+}
+
+.animal-description {
+    padding-top: 7rem;
+    font-size: 20px;
+    text-align: left;
+}
+
+.more {
+    font-size: 20px;
+    color: #9C90A8;
+    float: right;
+    text-decoration: none;
+}
+
+.date {
+    float: left;
+    font-size: 20px;
+    color: #9C90A8;
+}
+
+.likes {
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    padding-left: 0.2rem;
+}
+
+.likes-count {
+    float: right;
+    font-size: 20px;
+    color: #FCACBF;
+}
+
+/* End of animal grid formatting */

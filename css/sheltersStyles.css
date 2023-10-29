@@ -54,11 +54,11 @@ input {
   border-radius: 3px;
   margin-bottom: 2.5%;
 
-  width: 350px;
+  width: 95%;
 }
 
 .sidebar {
-  flex-basis: 400px;
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
   width: min-content;
@@ -92,10 +92,6 @@ input {
 .leaflet-popup .leaflet-popup-tip {
   background-color: #C622E1;
 }
-
-/* .shelter-popup .leaflet-popup-content-wrapper {
-  
-} */
 
 .location-popup .leaflet-popup-content-wrapper {
   background-color: #732DD9;

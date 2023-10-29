@@ -10,16 +10,35 @@
   <div class="search-div">
       <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
   </div>
-  <a href = "news"><img src="img\search.svg" class = "label-search"/></img>
-    <a href = "news"><img src="img\list.svg" class="button-label"> </img></a><br>     
+    <a href = "news"><img src="img\search.svg" class="btnSearch"> </img></a><br>     
 </div>
 <!-- End of search bar -->
 
-    <main>
-        <section id="search-section">
-            <input type="text" id="search-box" placeholder="Meklēt">
+    <main>  
+        <section class="pet">
+            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
+            <div>
+                <div class="format-name">
+                    <p class="purpose">ADOPCIJAI</p>
+                    <p class="animal-name">Sofija</p>
+                </div>
+                <div>
+                    <img src="img\female.svg" class="gender">
+                </div>
+            </div>
+            <div>
+                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
+                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
+            </div>
+            
+            <div>
+                <p class="date">2023-09-13</p>
+                <img src="img\heart.svg" class="likes">
+                <p class="likes-count">21</p>
+            </div>
+
         </section>
-        
+
         <section id="pets-grid">
             <!-- PHP kods šeit -->
             <?php

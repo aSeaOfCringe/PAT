@@ -10,13 +10,10 @@
 </head>
 <body>
     <!-- Start of search bar -->
-    <div>
-        <div class="search-div">
-            <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
-        </div>
-        <a href = "news"><img src="img\search.svg" class = "label-search"/></img>
-         <a href = "news"><img src="img\list.svg" class="button-label"> </img></a><br>     
-    </div>
+    <div class="search-div">
+      <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
+  </div>
+    <a href = "news"><img src="img\search.svg" class="btnSearch"> </img></a><br> 
 <!-- End of search bar -->
 
 <?php
