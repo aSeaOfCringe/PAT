@@ -1,12 +1,9 @@
-<nav class="navbar gradient-rectangle1">
-    <div class="container-fluid row">
-        <div class="col-3">
+<nav class="navbar navbar-expand-lg gradient-rectangle1">
+    <div class="container-fluid">
             <a class="navbar-brand" href="\">
                 <img src="img/PAT.png" alt="">
             </a>
-        </div>
-        <div class="collapse navbar-collapse" style="color: white;" id="navbarSupportedContent">
-            <div class="col-6 d-flex justify-content-center">
+        <div class="collapse navbar-collapse justify-content-center" style="color: white;" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link buttonNav" href="\"><button class="button">PAT</button></a>
@@ -23,8 +20,7 @@
                     <li class="nav-item">
                         <a class="nav-link buttonNav" href="donate"><button class="button">ZIEDOT</button></a>
                     </li>
-            </div>
-            <div class="col-3 d-flex justify-content-end">
+            <div class="justify-content-end">
                 
                 <div class="image-glob">
 
