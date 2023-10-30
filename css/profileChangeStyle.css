@@ -14,6 +14,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.collumn-one {
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-right: 15%;
+    justify-items: right;
+}
+
 h1 {
     color: #732DD9;
     font-size: 36px;
@@ -23,48 +31,48 @@ h1 {
     text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
 }
 
-/* .row {
-    padding: 2.5rem;
-} */
-
 input[type=text] {
     font-size: 2rem;
     color: #888888;
     height: 3.5rem;
     width: 40rem;
-    float: right;
     box-sizing: border-box;
     border: 1px solid #732DD9;
     box-shadow: 3px 3px 3px #D5C0F4;
+    float: right;
 }
 
-/* input[type=text]:focus {
-    border: 3px solid #732DD9;
-} */
+label {
+    font-size: 20px;
+    /* text-align: right; */
+    color: #888888;
+    float: left;
+}
 
-.button-wrapper {
+.row {
+    padding: 1rem;
+}
+
+/* Button formatting */
+
+/* .button-wrapper {
     text-align: center;
     margin-top: 20px;
 }
 
 .button-wrapper .purple-button {
-    /* display: inline-block; */
     width: 250px;
     padding: 10px 20px;
     background-color: #6f42c1;
     color: #fff;
-    /* text-decoration: none; */
     border: none;
     border-radius: 5px;
     margin: 5px 10px;
-    /* cursor: pointer; */
     transition: background-color 0.3s;
-    /* font-family: inherit; */
-    /* box-sizing: border-box; */
     font-size: 16px;
-}
+} */
 
-.button-wrapper .purple-button:hover {
+/* .button-wrapper .purple-button:hover {
     background-color: #5a3f99;
 }
 
@@ -74,56 +82,17 @@ input[type=text] {
     font-family: inherit;
     display: block;
     margin-top: 10px;
-}
+} */
 
-.button-wrapper a.purple-link:hover {
+/* .button-wrapper a.purple-link:hover {
     color: #5a3f99;
-}
-
-.collumn-one {
-    float: left;
-    margin-left: 15%;
-    margin-bottom: 10%;
-    margin-right: 15%;
-}
+} */
 
 .collumn-two {
-    /* float: right; */
-    margin-top: 5%;
     margin-right: 15%;
     margin-bottom: 5%;
     justify-content: left;
-}
-
-label {
-    font-size: 20px;
-    text-align: right;
-    color: #888888;
-}
-
-.row {
-    padding: 1rem;
-}
-
-.hidden {
-    height: 2rem;
-    width: 2rem;
-    position: relative;
-    top: 0.7rem;
-    bottom: 0;
-    background: url("img\eye.svg") center / contain no-repeat;
-}
-
-#curPassw {
-    left: 71%;
-}
-
-#newPassw {
-    left: 76.9%;
-}
-
-#repNewPassw {
-    left: 65.1%
+    padding-top: 5%;
 }
 
 .profile-pic {
@@ -132,8 +101,6 @@ label {
     position: absolute;
 
 }
-
-.profile-pic-wrapper {}
 
 .btnEditProfile {
     /* padding-top: 68%; */
@@ -171,4 +138,8 @@ label {
     margin-top: 2%;
     margin-left: 15%;
     margin-bottom: 20%;
+}
+
+a {
+    text-decoration: none;
 }

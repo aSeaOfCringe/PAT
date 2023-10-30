@@ -43,21 +43,18 @@
 
         <div class="row">
             <label for="curPassw">Pašreizējā parole:</label>
-            <label for="curPassw"><object data="img\eye.svg" class="hidden" id="curPassw"> </object></label>
             <input type="text" id="curPassw" name="curPassw" placeholder="*****"
             placeholder=><br><br>
         </div>
 
         <div class="row">
             <label for="newPassw">Jaunā parole:</label>
-            <label for="newPassw"><object data="img\eye.svg" class="hidden" id="newPassw"> </object></label>
             <input type="text" id="newPassw" name="newPassw" placeholder="*****"><br><br>
 
         </div>
 
         <div class="row">
             <label for="repNewPassw">Jaunā parole atkārtoti:</label>
-            <label for="repNewPassw"><object data="img\eye.svg" class="hidden" id="repNewPassw"> </object></label>
             <input type="text" id="repNewPassw" name="repNewPassw" placeholder="*****"><br><br>
         </div>
 

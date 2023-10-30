@@ -59,9 +59,128 @@ p {
     font-size: 18px;
 }
 
-.editProfile {
+.edit-profile-btn {
     height: 40px;
     width: 40px;
     float: right;
     vertical-align: top;
+}
+
+/* Beginning of posters formatting */
+
+.posters-title {
+    padding-left: 5%;
+}
+
+.poster {
+    margin: 1%;
+    margin-left: 5%;
+    padding: 2%;
+    display: inline-block;
+    height: min-content;
+    height: auto;
+    background: #F2F2F2;
+}
+
+.animal-pic {
+    float: left;
+    max-width: 250px;
+    width: auto;
+    max-height: 250px;
+    height: auto;
+    margin-right: 4rem;
+}
+
+.animal-info {
+    float: left;
+}
+
+.name {
+    font-weight: bold;
+    float: left;
+    font-size: 20px;
+    padding-right: 5rem;
+}
+
+.gender {
+    width: 40px;
+    height: 40px;
+}
+
+h3 {
+    color: #7AA355;
+}
+
+.description {
+    max-width: 700px;
+}
+
+.poster-buttons {
+    float: right;
+}
+
+.date {
+    color: #9C90A8;
+}
+
+.edit-animal {
+    height: 40px;
+    width: 40px;
+}
+
+.likes-format {
+    padding-top: 11rem;
+    vertical-align: bottom;
+    display: inline-block
+}
+
+.likes-count {
+    color: #FCACBF;
+    float: left;
+}
+
+.likes {
+    height: 25px;
+    width: 25px;
+}
+
+/* Button formatting */
+
+.center_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+    padding-top: 2%;
+}
+
+.add-poster-btn {
+    height: min-content;
+    width: max-content;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.add-poster-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }

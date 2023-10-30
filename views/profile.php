@@ -23,12 +23,55 @@
                 <p>22342345</p><br>
             </div>
         </div>
-        <img src="img\pencil-black-circle.svg" alt="Rediģēt profilu" class="editProfile"/>
 
-<!-- 
-        <div>
+        <a href="profileChange"><img src="img\pencil-black-circle.svg" alt="Rediģēt profila informāciju" class="edit-profile-btn"/></a><br>
 
-        </div> -->
+    </div>
+
+    <h1 class="posters-title">Sludinājumi</h1>
+
+    <div class="poster">
+        <img src="img\animals\black-cat.jpg" alt="Dzīvnieka bilde" class="animal-pic"/>
+        <div class="animal-info">
+            <p class="name">Sofija</p>
+            <img src="img\female.svg" alt="Dzimums" class="gender"/><br>
+            <h3>ADOPTĒT</h3><br>
+            <p class="description">Šeit atrodas apraksts par šo dzīvnieku. Šeit atrodas apraksts par šo dzīvnieku. 
+                Šeit atrodas apraksts par šo dzīvnieku.</p><br>
+            <p class="date">2023-09-13</p>
+        </div>
+
+        <div class="poster-buttons">
+            <a href="advertismentChange"><img src="img\edit-black.svg" alt="Rediģēt dzīvnieka informāciju" class="edit-animal"/></a><br>
+            <div class="likes-format">
+                <p class="likes-count">13</p>
+                <img src="img\heart.svg" alt="Patīk" class="likes"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="poster">
+        <img src="img\animals\black-cat.jpg" alt="Dzīvnieka bilde" class="animal-pic"/>
+        <div class="animal-info">
+            <p class="name">Sofija</p>
+            <img src="img\female.svg" alt="Dzimums" class="gender"/><br>
+            <h3>ADOPTĒT</h3><br>
+            <p class="description">Šeit atrodas apraksts par šo dzīvnieku. Šeit atrodas apraksts par šo dzīvnieku. 
+                Šeit atrodas apraksts par šo dzīvnieku.</p><br>
+            <p class="date">2023-09-13</p>
+        </div>
+
+        <div class="poster-buttons">
+            <a href="advertismentChange"><img src="img\edit-black.svg" alt="Rediģēt dzīvnieka informāciju" class="edit-animal"/></a><br>
+            <div class="likes-format">
+                <p class="likes-count">13</p>
+                <img src="img\heart.svg" alt="Patīk" class="likes"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="center_button">
+        <a href="advertismentAdd"><button class="add-poster-btn">Pievienot sludinājumu</button></a>
     </div>
     
 </body>
