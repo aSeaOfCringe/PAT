@@ -64,7 +64,7 @@
 
 <div class="pets-grid">
         <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
+            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic"/>
             <div>
                 <div class="format-name">
                     <p class="purpose">ADOPCIJAI</p>
@@ -76,7 +76,7 @@
             </div>
             <div>
                 <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
+                    apraksts apraksts apraksts apraksts apraksts apraksts <a href="advertisment" class="more">... vairāk</a></p>
             </div>
             
             <div>

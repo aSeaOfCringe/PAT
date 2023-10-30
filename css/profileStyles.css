@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.profile {
+    margin: 5%;
+    padding: 2%;
+    border: 2px solid #732DD9;
+    width: 85%;
+    height: min-content;
+    height: auto;
+    min-height: 245px;
+    display: inline-block
+}
+
+.profile-pic {
+    float: left;
+    height: 156px;
+    width: 156px;
+    border-right: 5%;
+}
+
+.person-info {
+    float: left;
+    padding-left: 5rem;
+    width: 70%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #732DD9;
+    -webkit-text-stroke: 1px #C622E1;
+    text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #732DD9;
+    text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
+    font-weight: lighter;
+}
+
+.helper-icon {
+    height: 30px;
+    width: auto;
+    float: left;
+    padding-right: 3rem;
+    padding-top: 1%;
+}
+
+p {
+    font-size: 18px;
+}
+
+.editProfile {
+    height: 40px;
+    width: 40px;
+    float: right;
+    vertical-align: top;
+}

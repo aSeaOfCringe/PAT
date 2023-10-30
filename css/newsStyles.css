@@ -187,13 +187,10 @@ main {
     padding-top: 3%;
     /* flex-basis: 25%; */
     display: flex;
-    width: 30%;
     flex-direction: column;
     width: min-content;
     overflow-y: auto;
-    /* overflow-x: hidden; */
-    /* transition: all 0.5s, transform 1ms; */
-    position: relative;
+    overflow-x: hidden;
     float: right;
     padding-bottom: 30%;
     padding-left: 1%;

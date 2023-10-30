@@ -42,7 +42,7 @@
             $_SESSION['name'] = $user['vards'];
             $_SESSION['surname'] = $user['uzvards'];
             
-            header("location:/");
+            header("location:profile");
 
         }
 
