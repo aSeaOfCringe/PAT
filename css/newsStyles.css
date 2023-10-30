@@ -17,23 +17,23 @@ body {
     width: 80%;
 }
 
-#pets-grid {
+/* #pets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 
-}
+} */
 
-.pet-card {
+/* .pet-card {
     background-color: #fff;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
+} */
 
-.pet-card img {
+/* .pet-card img {
     max-width: 100%;
     border-radius: 5px;
 }
@@ -44,15 +44,16 @@ body {
 
 #filters h3 {
     margin-top: 0;
-}
+} */
 
 /* Start of search bar formatting */
 .search-div {
     float: left;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-right: 1%;
     padding: 1%;
-    width: 81%;
+    width: 91%;
+    border-bottom: 1%;
 }
 
 .search {
@@ -80,17 +81,37 @@ body {
 
 /* End of search bar formatting */
 
+main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
 /* Start of animal grid formatting */
+.pets-grid {
+    /* width: 100%; */
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 1%;
+    padding-left: 1px;
+    padding-right: 1px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 .pet {
     padding: 1%;
     width: 350px;
     text-align: center;
     margin: 2%;
     background-color: #FFFFFF;
-    height: 600px;
+    height: 500px;
     vertical-align: center;
     background-color: #DEDFE1;
     box-shadow: 5px 10px #888888;
+    position: relative;
+    float: left;
 }
 
 .animal-pic {
@@ -158,3 +179,79 @@ body {
 }
 
 /* End of animal grid formatting */
+
+/* Start of side bar. */
+
+.filters {
+    height: 100%;
+    padding-top: 3%;
+    /* flex-basis: 25%; */
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    width: min-content;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    /* transition: all 0.5s, transform 1ms; */
+    position: relative;
+    float: right;
+    padding-bottom: 30%;
+    padding-left: 1%;
+}
+
+.filter-box {
+    width: 300px;
+    padding-bottom: 15%;
+}
+
+.gender-box {
+    width: 9%;
+    height: 9%;
+}
+
+h3 {
+    color: #732DD9;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+label {
+    color: #732DD9;
+    font-size: 22px;
+}
+
+input[type="checkbox"] {
+    outline: 2px solid #732DD9;
+}
+
+.btnFilter {
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    margin: 7%;
+    margin-top: 15%;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btnFilter:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
