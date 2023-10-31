@@ -19,6 +19,7 @@ class Router {
             case 'advertisment':
                 require_once("models/AdvertismentPage.php");
                 $Page = new AdvertismentPage("Sludinajums");
+                $Page->fetchData($db);
                 break;
             
             case 'contacts':
@@ -106,6 +107,7 @@ class AuthRouter extends Router{
             case 'advertisment':
                 require_once("models/AdvertismentPage.php");
                 $Page = new AdvertismentPage("Sludinajums");
+                $Page->fetchData($db);
                 break;
 
             case 'advertismentChange':

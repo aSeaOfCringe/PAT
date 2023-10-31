@@ -3,11 +3,11 @@
     padding: 0;
 }
 
-body{
+body {
     background-image: url('back.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 html {
@@ -32,36 +32,45 @@ h1 {
 }
 
 .container {
-    width: 420px; 
-    margin: 0 auto; 
+    width: 420px;
+    margin: 0 auto;
 }
 
 .square {
-    background-image: url('dog.jpg');
+    /* background-image: url('dog.jpg'); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 800px;
-    height: 400px; 
+    height: 400px;
     background-color: white;
-    border: 3px solid #C622E1; 
+    border: 3px solid #C622E1;
     margin: 0 auto;
     margin-top: 1rem;
     margin-left: 15rem;
 }
 
+.animal-pic {
+    max-width: 800px;
+    width: auto;
+    max-height: 400px;
+    height: auto;
+}
+
 .square2 {
     width: 800px;
-    height: 200px; 
+    height: 200px;
     background-color: white;
-    border: 3px solid #C622E1; 
+    border: 3px solid #C622E1;
     margin: 0 auto;
     margin-top: 1rem;
     margin-left: 15rem;
 }
 
 .square3
-/*.square4*/ {
+
+/*.square4*/
+    {
     width: 800px;
     height: 200px;
     background-color: white;
@@ -69,7 +78,7 @@ h1 {
     margin: 0 auto;
     margin-top: 2px;
     margin-left: 25rem;
-    float: left; 
+    float: left;
 }
 
 .square4 {
@@ -80,13 +89,14 @@ h1 {
     margin: 0 auto;
     margin-top: 2px;
     margin-left: 25rem;
-    float: left; 
+    float: left;
 }
 
 .square5 {
     width: 800px;
     height: 200px;
-    background-color: rgb(191, 189, 189); /* Set background color to grey for square5 */
+    background-color: rgb(191, 189, 189);
+    /* Set background color to grey for square5 */
     border: 3px solid #C622E1;
     margin: 0 auto;
     margin-top: 2px;
@@ -138,7 +148,7 @@ h1 {
 }
 
 .grey-button {
-        height: 4rem;
+    height: 4rem;
     margin-top: 2rem;
     background: linear-gradient(to right, #bdbdbd, #a9a9a9);
     color: white;
