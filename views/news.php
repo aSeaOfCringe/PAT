@@ -65,12 +65,21 @@
 <div class="pets-grid">
     <?php
     $gender;
+    $veids;
     foreach ($this->data as $row) {
 
         if($row['dzimums'] == 0){
             $gender = 'img\male.svg';
         }  else {
             $gender = 'img\female.svg';
+        }
+
+        if($row['darijuma_veids'] == 'adoption'){
+            $veids = 'adoptēt';
+        } else if ($row['darijuma_veids'] == 'lost'){
+            $veids = 'pazaudēts';
+        } else {
+            $veids = 'atrasts';
         }
 
         $name = "id{$row['id']}";
@@ -80,7 +89,7 @@
         <img src='img\animals\\". $row['attels'] . "' alt='Dzivnieka attels' class='animal-pic'/>
         <div>
             <div class='format-name'>
-                <p class='purpose'>" . $row['darijuma_veids'] . "</p>
+                <p class='purpose'>" . $veids . "</p>
                 <p class='animal-name'>" . $row['vards'] . "</p>
             </div> 
             <div>

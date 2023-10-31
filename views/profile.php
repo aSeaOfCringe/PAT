@@ -31,14 +31,29 @@
     <h1 class="posters-title">Sludinājumi</h1>
 
     <?php
+    $gender;
+    $veids;
     foreach($sludinajumi as $row) {
+        if($row['dzimums'] == 0){
+            $gender = 'img\male.svg';
+        }  else {
+            $gender = 'img\female.svg';
+        }
+
+        if($row['darijuma_veids'] == 'adoption'){
+            $veids = 'adoptēt';
+        } else if ($row['darijuma_veids'] == 'lost'){
+            $veids = 'pazaudēts';
+        } else {
+            $veids = 'atrasts';
+        }
    ?>
     <div class="poster">
-        <img src="img\animals\black-cat.jpg" alt="Dzīvnieka bilde" class="animal-pic"/>
+        <img src="img\animals\<?=$row['attels']?>" alt="Dzīvnieka bilde" class="animal-pic"/>
         <div class="animal-info">
-            <p class="name"><?=$row['sludinajumi_id']?></p>
-            <img src="img\female.svg" alt="Dzimums" class="gender"/><br>
-            <h3>ADOPTĒT</h3><br>
+            <p class="name"><?=$row['vards']?></p>
+            <img src="<?=$gender?>" alt="Dzimums" class="gender"/><br>
+            <h3><?=$veids?></h3><br>
             <p class="description"><?=$row['apraksts']?></p><br>
             <p class="date"><?=$row['datums']?></p>
         </div>
@@ -46,7 +61,7 @@
         <div class="poster-buttons">
             <a href="advertismentChange"><img src="img\edit-black.svg" alt="Rediģēt dzīvnieka informāciju" class="edit-animal"/></a><br>
             <div class="likes-format">
-                <p class="likes-count">13</p>
+                <p class="likes-count"><?=$row['likes_count']?></p>
                 <img src="img\heart.svg" alt="Patīk" class="likes"/>
             </div>
         </div>

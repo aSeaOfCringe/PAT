@@ -80,6 +80,7 @@ p {
     height: min-content;
     height: auto;
     background: #F2F2F2;
+    width: 65%;
 }
 
 .animal-pic {
@@ -109,6 +110,7 @@ p {
 
 h3 {
     color: #7AA355;
+    text-transform: uppercase;
 }
 
 .description {
@@ -121,6 +123,7 @@ h3 {
 
 .date {
     color: #9C90A8;
+    vertical-align: bottom;
 }
 
 .edit-animal {
