@@ -10,7 +10,11 @@ class PATWebApplication {
     function Run(){
         $db = new DBase();
         session_start();
-        $router = new Router($db);
+        if(isset($_SESSION["id"])){
+            $router = new AuthRouter($db);
+        }else{
+            $router = new Router($db);
+        }
     }
 
 }

@@ -12,15 +12,15 @@
         <img src="img\no-profile-picture-man.svg" alt="Profile picture" class="profile-pic"/>
 
         <div class="person-info">
-            <h1>Vārds Uzvārds</h1>
+            <h1><?=$data['vards']." ".$data['uzvards'] ?></h1>
             <h2>Patversmes nosaukums</h2>
             <div>
                 <img src="img\at-sign.svg" alt="E-pasts" class="helper-icon"/>
-                <p>epasts@epasts.lv</p><br>
+                <p><?=$data['epasts']?></p><br>
                 <img src="img\location-pin.svg" alt="Adrese" class="helper-icon"/>
                 <p>Zunda krastmala 10, Kurzemes rajons, Rīga, LV-1048</p><br>
                 <img src="img\phone-light.svg" alt="Telefona nr." class="helper-icon"/>
-                <p>22342345</p><br>
+                <p><?=$data['telefona_nr']?></p><br>
             </div>
         </div>
 
@@ -30,15 +30,17 @@
 
     <h1 class="posters-title">Sludinājumi</h1>
 
+    <?php
+    foreach($sludinajumi as $row) {
+   ?>
     <div class="poster">
         <img src="img\animals\black-cat.jpg" alt="Dzīvnieka bilde" class="animal-pic"/>
         <div class="animal-info">
-            <p class="name">Sofija</p>
+            <p class="name"><?=$row['sludinajumi_id']?></p>
             <img src="img\female.svg" alt="Dzimums" class="gender"/><br>
             <h3>ADOPTĒT</h3><br>
-            <p class="description">Šeit atrodas apraksts par šo dzīvnieku. Šeit atrodas apraksts par šo dzīvnieku. 
-                Šeit atrodas apraksts par šo dzīvnieku.</p><br>
-            <p class="date">2023-09-13</p>
+            <p class="description"><?=$row['apraksts']?></p><br>
+            <p class="date"><?=$row['datums']?></p>
         </div>
 
         <div class="poster-buttons">
@@ -49,7 +51,7 @@
             </div>
         </div>
     </div>
-
+    <?php } ?>
     <div class="poster">
         <img src="img\animals\black-cat.jpg" alt="Dzīvnieka bilde" class="animal-pic"/>
         <div class="animal-info">
