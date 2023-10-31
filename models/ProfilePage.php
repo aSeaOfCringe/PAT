@@ -15,7 +15,7 @@
             $profileQuery = mysqli_query($db->connection,"SELECT * FROM `lietotaji` where `lietotaji_id` = '$currentID'");
             $resultProfile = mysqli_fetch_assoc($profileQuery);
             $this->profileData = $resultProfile;
-            $advertismentQuery =  mysqli_query($db->connection,"SELECT * FROM `sludinajumi` where `lietotatajs_id` = '$currentID'");
+            $advertismentQuery =  mysqli_query($db->connection,"SELECT * FROM `sludinajumi` where `lietotaja_id` = '$currentID'");
             while($row = mysqli_fetch_array($advertismentQuery)) {
                 $resultAdvertismetns[] = $row;
             }
