@@ -102,22 +102,22 @@ main {
 
 .pet {
     padding: 1%;
-    width: 350px;
+    width: 340px;
     text-align: center;
     margin: 2%;
     background-color: #FFFFFF;
-    height: 500px;
     vertical-align: center;
     background-color: #DEDFE1;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 4px 8px #888888;
     position: relative;
     float: left;
+    min-height: 505px;
 }
 
 .animal-pic {
-    max-width: 350px;
+    max-width: 300px;
     width: auto;
-    max-height: 250px;
+    max-height: 210px;
     height: auto;
     padding-bottom: 4%;
 }
@@ -129,13 +129,13 @@ main {
 
 .purpose {
     color: #7AA355;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: left;
 }
 
 .animal-name {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     font-weight: bold;
 }
@@ -147,22 +147,32 @@ main {
 }
 
 .animal-description {
-    padding-top: 7rem;
-    font-size: 20px;
+    padding-top: 6rem;
+    font-size: 18px;
     text-align: left;
 }
 
-.more {
-    font-size: 20px;
+input[type=submit] {
     color: #9C90A8;
+    font-size: 14px;
+    border: 0;
+    outline: 0;
+    background: transparent;
     float: right;
-    text-decoration: none;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.lover {
+    margin-top: 1rem;
+    vertical-align: bottom;
 }
 
 .date {
     float: left;
-    font-size: 20px;
+    font-size: 14px;
     color: #9C90A8;
+    vertical-align: bottom;
 }
 
 .likes {
@@ -170,12 +180,14 @@ main {
     height: 2rem;
     width: 2rem;
     padding-left: 0.2rem;
+    vertical-align: bottom;
 }
 
 .likes-count {
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     color: #FCACBF;
+    vertical-align: bottom;
 }
 
 /* End of animal grid formatting */
@@ -197,24 +209,24 @@ main {
 }
 
 .filter-box {
-    width: 300px;
-    padding-bottom: 15%;
+    width: 270px;
+    padding-bottom: 30%;
 }
 
 .gender-box {
-    width: 9%;
-    height: 9%;
+    width: 7%;
+    height: 7%;
 }
 
 h3 {
     color: #732DD9;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 label {
     color: #732DD9;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 input[type="checkbox"] {

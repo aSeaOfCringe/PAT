@@ -3,7 +3,7 @@
 
     class NewsPage extends HtmlPage {
 
-        private $data = [];
+        public $data = [];
         function setContent(){
             $this->content = $this->renderTemplate('views/news.php',['data' => $this->data]);
         }

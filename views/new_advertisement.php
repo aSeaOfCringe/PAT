@@ -15,7 +15,7 @@
             position: absolute;
             width: 600px; 
             left: 50%;
-            top: 30%;
+            top: 5%;
             margin-left: -300px;
             text-align: center; 
             background-color: #fff; 
@@ -103,15 +103,28 @@
 <body>
 <div id="action_form">
     <form action="advertisment" method="post">
+    <label for="animal-name">Vārds</label>
+        <input name="animal-name" id="animal-name" type="text">
         <label for="animal_type">Dzīvnieks</label>
         <select name="animal_type" id="animal_type">
-            <option value="dog">Suns</option>
-            <option value="cat">Kaķis</option>
+            <option value="dog">Suņi</option>
+            <option value="cat">Kaķi</option>
+            <option value="hamster">Grauzēji</option>
+            <option value="birds">Putni</option>
+            <option value="exotic">Eksotiskie dzīvnieki</option>
+            <option value="fish">Zivis</option>
+            <option value="others">Citi</option>
         </select>
         <label for="breed">Šķirne</label>
         <input name="breed" id="breed" type="text">
         <label for="age">Vecums</label>
         <input name="age" id="age" type="number">
+        <label for="purpose">Nolūks</label>
+        <select name="purpose" id="purpose">
+            <option value="adoption">Adopcijai</option>
+            <option value="lost">Pazaudēts</option>
+            <option value="found">Atrasts</option>
+        </select>
         <label>Dzimums</label>
         <div class="gender-label">
             <input type="radio" name="gender" value="male" id="male">

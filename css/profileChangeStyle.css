@@ -44,7 +44,6 @@ input[type=text] {
 
 label {
     font-size: 20px;
-    /* text-align: right; */
     color: #888888;
     float: left;
 }
@@ -52,41 +51,6 @@ label {
 .row {
     padding: 1rem;
 }
-
-/* Button formatting */
-
-/* .button-wrapper {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.button-wrapper .purple-button {
-    width: 250px;
-    padding: 10px 20px;
-    background-color: #6f42c1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 5px 10px;
-    transition: background-color 0.3s;
-    font-size: 16px;
-} */
-
-/* .button-wrapper .purple-button:hover {
-    background-color: #5a3f99;
-}
-
-.button-wrapper a.purple-link {
-    color: #6f42c1;
-    text-decoration: none;
-    font-family: inherit;
-    display: block;
-    margin-top: 10px;
-} */
-
-/* .button-wrapper a.purple-link:hover {
-    color: #5a3f99;
-} */
 
 .collumn-two {
     margin-right: 15%;
@@ -103,7 +67,6 @@ label {
 }
 
 .btnEditProfile {
-    /* padding-top: 68%; */
     height: 50px;
     width: 300px;
     font-weight: bold;

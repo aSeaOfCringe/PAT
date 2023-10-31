@@ -61,17 +61,12 @@
     </div>
 
     <div class="collumn-two">
-
         <div class="profile-pic-wrapper">
             <object data="img\no-profile-picture-man.svg" class= "profile-pic"> </object> 
         </div>
         <object data="img\pencil-black-circle.svg" class="editPhoto"> </object> 
         </br>
         <a href="profile"><button  type="input" class="btnEditProfile" class="btn-grad">Saglabāt izmaiņas</button></a>
-        <!-- <div class="button-wrapper">
-                <input type="submit" name="btnEditProfile" class="purple-button" value="Saglabāt izmaiņas">
-        </div> -->
-
     </div>
     
 </body>

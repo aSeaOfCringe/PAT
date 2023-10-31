@@ -53,195 +53,64 @@
         <div class="genderfilter-box">
             <h3>Dzimums</h3>
             <input type="checkbox" name="male" value="male">
-            <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label><br>
+            <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label>
 
             <input type="checkbox" name="female" value="female">
-            <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label><br>
+            <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label>
         </div>
 
         <a href="news"><button class="btnFilter">Atlasīt</button></a>
     </aside>
 
 <div class="pets-grid">
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic"/>
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a href="advertisment" class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
+    <?php
+    $gender;
+    foreach ($this->data as $row) {
 
-        </section>
+        if($row['dzimums'] == 0){
+            $gender = 'img\male.svg';
+        }  else {
+            $gender = 'img\female.svg';
+        }
 
-        <!-- <section id="pets-grid"> -->
-            <!-- PHP kods šeit -->
-            <?php
-            // Pieņemam, ka esat izveidojis savienojumu ar datu bāzi un ieguvis datus
-            
-            // foreach ($data as $pet) {
-                
-            //     echo "<div class='pet-card'>
-            //             <img src='img/test/xru.jpg' alt='kk'>
-            //             <h3>Adoptešanai - HANAH</h3>
-            //             <p>{$pet['apraksts']}</p>
-            //             <span>{$pet['datums']}</span>
-            //           </div>";
-            // }
-            ?>
-        <!-- </section> -->
+        $name = "id{$row['id']}";
+        $$name = $row['id'];
 
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
+        echo "<section class='pet'>
+        <img src='img\animals\\". $row['attels'] . "' alt='Dzivnieka attels' class='animal-pic'/>
+        <div>
+            <div class='format-name'>
+                <p class='purpose'>" . $row['darijuma_veids'] . "</p>
+                <p class='animal-name'>" . $row['vards'] . "</p>
+            </div> 
             <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
+                <img src='" . $gender . "' class='gender'>
             </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
+        </div>
+        <div>
+        <p class='animal-description'>" . $row['apraksts'] . "
+            <form action='' method='post'>
+            <input type='hidden' name='toMore'  value='" .$row['id'] ."'>
+            <input class='z' class='more' type='submit' name='$name'  value='Vairāk ...'>
+            </form></p><br>";
+        echo "</div>
+        <div class='lover'>
+            <p class='date'>" . $row['datums'] . "</p>
+            <img src='img\heart.svg' class='likes'>
+            <p class='likes-count'>" . $row['likes_count'] . "</p>
+        </div>
+        </section>";
+    }
 
-        </section>
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
+    if(isset($_POST['toMore'])) {
+        $_SESSION['id'] = $_POST['toMore'];
+        header("Location: advertisment");
+        die();
+     }
 
-        </section>
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
+                    // <a href='advertisment' class='more'>... vairāk</a></p><br>
 
-        </section>
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
-
-        </section>
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
-
-        </section>
-        <section class="pet">
-            <img src="img\animals\black-cat.jpg" alt="Melns kaķis" class="animal-pic">
-            <div>
-                <div class="format-name">
-                    <p class="purpose">ADOPCIJAI</p>
-                    <p class="animal-name">Sofija</p>
-                </div>
-                <div>
-                    <img src="img\female.svg" class="gender">
-                </div>
-            </div>
-            <div>
-                <p class="animal-description">Apraksts, apraksts  apraksts apraksts 
-                    apraksts apraksts apraksts apraksts apraksts apraksts <a class="more">... vairāk</a></p>
-            </div>
-            
-            <div>
-                <p class="date">2023-09-13</p>
-                <img src="img\heart.svg" class="likes">
-                <p class="likes-count">21</p>
-            </div>
-
-        </section>
+    ?>
     </div> 
 </main>
     
