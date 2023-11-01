@@ -15,11 +15,6 @@ html {
     box-sizing: border-box;
 }
 
-/* GENERAL */
-a:link,
-a:visited {
-    color: #C622E1;
-}
 
 h1 {
     color: #1aff00;
