@@ -6,14 +6,7 @@
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 </head>
 <body>
-<!-- Start of search bar -->
-<div>
-  <div class="search-div">
-      <input type="text" id="search" name="search" class="search" placeholder="Meklēt"></input>
-  </div>
-    <a href = "news"><img src="img\search.svg" class="btnSearch"> </img></a><br>     
-</div>
-<!-- End of search bar -->
+
 <main>
 <!-- Filtri -->
 <aside class="filters" id="sidebar">
