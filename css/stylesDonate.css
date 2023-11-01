@@ -1,4 +1,4 @@
-@media screen and (max-width:1366px) {
+
   body {
     background-image: url('back.jpg');
     background-size: cover;
@@ -14,7 +14,7 @@
     line-height: 1.5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 35%;
+    top: 10%;
     left: 5%;
   }
 
@@ -29,24 +29,24 @@
     color: #000000;
     line-height: 1.5;
     position: absolute;
-    top: 52%;
+    top: 20%;
     left: 50%;
   }
 
   .black.next1 {
-    top: 57%;
+    top: 25%;
   }
 
   .black.next2 {
-    top: 62%;
+    top: 30%;
   }
 
   .black.next3 {
-    top: 67%;
+    top: 35%;
   }
 
   .black.next4 {
-    top: 77%;
+    top: 45%;
   }
 
   .custom-select {
@@ -55,7 +55,7 @@
     height: 40px;
     margin: 10px;
     border: 2px solid #732DD9;
-    top: 52%;
+    top: 20%;
     left: 4%;
   }
 
@@ -65,7 +65,7 @@
     height: 40px;
     margin: 10px;
     border: 2px solid #732DD9;
-    top: 62%;
+    top: 30%;
     left: 4%;
   }
 
@@ -75,7 +75,7 @@
     height: 80px;
     margin: 10px;
     border: 2px solid #732DD9;
-    top: 72%;
+    top: 40%;
     left: 4%;
   }
 
@@ -85,7 +85,7 @@
     height: 40px;
     margin: 10px;
     border: 2px solid #732DD9;
-    top: 88%;
+    top: 55%;
     left: 4%;
   }
 
@@ -107,7 +107,7 @@
     border: none;
     color: var(--btn-bg-color);
     position: absolute;
-    top: 89.5%;
+    top: 56.5%;
     left: 35%;
   }
 
@@ -119,4 +119,3 @@
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
-}

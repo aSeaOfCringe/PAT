@@ -22,7 +22,7 @@
                     </li>
             <div class="justify-content-end">
                 
-                <div class="image-glob">
+                <div class="toHeaderRight">
 
                     <?php if (!isset($_SESSION['id'])) { ?>
 
@@ -38,7 +38,7 @@
                     } ?>
         
 
-
+        <div class="image-glob">
                     <img class="image-fluid" src="img/glob.png" alt="glob">
                     <div class="language-popup">
                         <ul>
@@ -57,7 +57,7 @@
                         </ul>
                     </div>
                 </div>
-
+                </div>
             </div>
             </ul>
         </div>
