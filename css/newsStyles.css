@@ -118,7 +118,7 @@ main {
     text-align: left;
 }
 
-input[type=submit] {
+.z {
     color: #9C90A8;
     font-size: 14px;
     border: 0;

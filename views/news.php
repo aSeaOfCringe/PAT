@@ -95,7 +95,7 @@
         <p class='animal-description'>" . $row['apraksts'] . "
             <form action='' method='post'>
             <input type='hidden' name='toMore'  value='" . $row['id'] . "'>
-            <input class='z' class='more' type='submit' name='$name'  value='Vairāk ...'>
+            <input class='z' type='submit' name='$name'  value='Vairāk ...'>
             </form></p><br>";
                 echo "</div>
         <div class='lover'>
