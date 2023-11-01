@@ -6,7 +6,7 @@
                         <p class="text-PAT">Adoptēt</p>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                        <a href="news"><img class="img-fluid" src="img/search.png" alt="Lost pet"></a>
+                        <a href="advertismentAdd"><img class="img-fluid" src="img/search.png" alt="Lost pet"></a>
                         <p class="text-PAT">Pazaudēts dzīvnieks</p>
                 </div>
                 <div class="col-sm-12 col-md-4">

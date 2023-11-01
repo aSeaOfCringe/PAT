@@ -86,6 +86,12 @@ class Router {
                 $Page = new ShopPage("Veikali"); // TODO or not
                 $Page->fetchShops($db);
                 break;
+
+            case 'advertismentAdd':
+                require_once("models/AdvertismentAddPage.php");
+                $Page = new AdvertismentAddPage("Jauns sludinajums");
+                header("location:/login");
+                break;
             
             default:
                 require_once("models/MainPage.php");
