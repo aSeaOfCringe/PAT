@@ -45,10 +45,10 @@
 
         <div class="genderfilter-box">
             <h3>Dzimums</h3>
-            <input type="checkbox" name="male" value="male">
-            <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label>
+            <input type="radio" name="male" value="male">
+            <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label><br>
 
-            <input type="checkbox" name="female" value="female">
+            <input type="radio" name="female" value="female">
             <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label>
         </div>
 
