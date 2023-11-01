@@ -1,4 +1,4 @@
-@media screen and (max-width:1366px) {
+
   body {
     background-image: url('back.jpg');
     background-size: cover;
@@ -119,4 +119,3 @@
     outline: none;
     box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
   }
-}
