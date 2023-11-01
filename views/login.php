@@ -87,7 +87,7 @@
         <?php } ?>
         <div class="centeredBox" id="action_form">
             <form action="login" method="post">
-                <label for="username">Ē-pasts</label>
+                <label for="username">E-pasts</label>
                 <input name="username" id="username" type="text"><br><br>
                 <label for="password">Parole</label>
                 <input name="password" id="password" type="password"><br><br>

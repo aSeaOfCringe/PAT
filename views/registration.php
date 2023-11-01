@@ -94,7 +94,7 @@
                 <input name="name" id="name" type="text"><br><br>
                 <label for="surname">Uzvārds(obligats)</label>
                 <input name="surname" id="surname" type="text"><br><br>
-                <label for="email">Ē-pasts(obligats)</label>
+                <label for="email">E-pasts(obligats)</label>
                 <input name="email" id="email" type="text"><br><br>
                 <label for="address">Adrese</label>
                 <input name="address" id="address" type="text"><br><br>
