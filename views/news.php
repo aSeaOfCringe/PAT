@@ -54,7 +54,7 @@
             <input type="radio" name="female" value="female">
             <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label>
         </div>
-
+        <input type="submit" name="btnFilter" class="btnFilter" value="Atlasīt"></input>
             </aside>
         </form>
         <div class="pets-grid">
