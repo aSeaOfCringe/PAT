@@ -40,37 +40,3 @@ h1 {
 .right {
     margin-left: 17%;
 }
-
-/* Start of search bar formatting */
-.search-div {
-    float: left;
-    margin-left: 5%;
-    margin-right: 1%;
-    padding: 1%;
-    width: 81%;
-}
-
-.search {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-left: 0.5%;
-    font-size: 30px;
-    width: 103%;
-    background-color: #dddddd;
-    border: #dddddd;
-    color: #732DD9;
-}
-
-.btnSearch {
-    width: 7rem;
-    height: auto;
-    padding-left: 1%;
-    margin-top: 1.2%;
-}
-
-::placeholder {
-    color: #732DD9;
-    opacity: 1;
-}
-
-/* End of search bar formatting */
