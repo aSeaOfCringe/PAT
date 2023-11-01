@@ -170,7 +170,7 @@ input[type=submit] {
     overflow-y: auto;
     overflow-x: hidden;
     float: right;
-    padding-bottom: 30%;
+    padding-bottom: 70%;
     padding-left: 1%;
 }
 
@@ -180,8 +180,8 @@ input[type=submit] {
 }
 
 .gender-box {
-    width: 7%;
-    height: 7%;
+    width: 20px;
+    height: 20px;
 }
 
 h3 {
