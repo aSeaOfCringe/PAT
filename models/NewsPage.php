@@ -21,6 +21,17 @@
             $this->setContent();
         }
 
+        function fetchAdoption($db){
+            $DataQuery = "SELECT * FROM `sludinajumi` WHERE `darijuma_veids` == 'adoption'";
+            $ResultQuery = mysqli_query($db->connection, $DataQuery);
+
+            $dataArray = [];
+            while($row = mysqli_fetch_array($ResultQuery)) {
+                $dataArray[] = $row;
+            }
+            $this->data = $dataArray;
+            $this->setContent();
+        }
 
     }
 

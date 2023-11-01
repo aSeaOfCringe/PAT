@@ -38,7 +38,7 @@
           }
 
           if(isset($_POST['toMore'])) {
-            $_SESSION['id'] = $_POST['toMore'];
+            $_SESSION['shelter_id'] = $_POST['toMore'];
             header("Location: shelter");
             die();
          }

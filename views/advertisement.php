@@ -13,7 +13,7 @@
     <h1>Pazudis dzīvnieks</h1>
 
     <?php
-    $var_value = $_SESSION['id'];
+    $var_value = $_SESSION['advertisment_id'];
     $i = $var_value - 1;
     $j;
 

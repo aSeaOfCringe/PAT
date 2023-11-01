@@ -11,7 +11,7 @@
 <body>
 
 <?php
-    $var_value = $_SESSION['id'];
+    $var_value = $_SESSION['shelter_id'];
     $i = $var_value - 1;
     if(array_key_exists($i, $this->sh) && $this->sh[$i]['id'] === $var_value){
         echo "<h1>" . $this->sh[$i]['nosaukums'] . "</h1>

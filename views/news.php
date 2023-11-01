@@ -105,7 +105,7 @@
     }
 
     if(isset($_POST['toMore'])) {
-        $_SESSION['id'] = $_POST['toMore'];
+        $_SESSION['advertisment_id'] = $_POST['toMore'];
         header("Location: advertisment");
         die();
      }

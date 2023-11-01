@@ -97,6 +97,7 @@ class AuthRouter extends Router{
                 require_once("models/NewsPage.php");
                 $Page = new NewsPage("Jaunumi");
                 $Page->getData($db);
+                // $Page->fetchAdoption($db);
                 break;
                 
             case 'advertismentAdd':
