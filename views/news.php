@@ -5,81 +5,84 @@
     <title>Paws and Tails</title>
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 </head>
+
 <body>
 
-<main>
-<!-- Filtri -->
-<aside class="filters" id="sidebar">
-        <div class="filter-box">
-            <h3>Dzīvnieks</h3>
-            <input type="checkbox" name="dog" value="dog">
-            <label for="dog">Suņi</label><br>
+    <main>
+        <!-- Filtri -->
 
-            <input type="checkbox" name="cat" value="cat">
-            <label for="cat">Kaķi</label><br>
+        <form action="news" method="post">
+            <aside class="filters" id="sidebar">
+                <div class="filter-box">
+                    <h3>Dzīvnieks</h3>
+                    <input type="checkbox" name="dog" value="dog">
+                    <label for="dog">Suņi</label><br>
 
-            <input type="checkbox" name="hamster" value="hamster">
-            <label for="hamster">Grauzēji</label><br>
+                    <input type="checkbox" name="cat" value="cat">
+                    <label for="cat">Kaķi</label><br>
 
-            <input type="checkbox" name="bird" value="bird">
-            <label for="bird">Putni</label><br>
+                    <input type="checkbox" name="hamster" value="hamster">
+                    <label for="hamster">Grauzēji</label><br>
 
-            <input type="checkbox" name="exotic" value="exotic">
-            <label for="exotic">Eksotiskie dzīvnieki</label><br>
+                    <input type="checkbox" name="bird" value="bird">
+                    <label for="bird">Putni</label><br>
 
-            <input type="checkbox" name="fish" value="fish">
-            <label for="fish">Zivis</label><br>
-        </div>
+                    <input type="checkbox" name="exotic" value="exotic">
+                    <label for="exotic">Eksotiskie dzīvnieki</label><br>
 
-        <div class="filter-box">
-            <h3>Veids</h3>
-            <input type="checkbox" name="adoption" value="adoption">
-            <label for="adoption">Adopcijai</label><br>
+                    <input type="checkbox" name="fish" value="fish">
+                    <label for="fish">Zivis</label><br>
+                </div>
 
-            <input type="checkbox" name="lost" value="lost">
-            <label for="lost">Pazaudēts</label><br>
+                <div class="filter-box">
+                    <h3>Veids</h3>
+                    <input type="checkbox" name="adoption" value="adoption">
+                    <label for="adoption">Adopcijai</label><br>
 
-            <input type="checkbox" name="found" value="found">
-            <label for="found">Atrasts</label><br>
-        </div>
+                    <input type="checkbox" name="lost" value="lost">
+                    <label for="lost">Pazaudēts</label><br>
 
-        <div class="genderfilter-box">
-            <h3>Dzimums</h3>
-            <input type="checkbox" name="male" value="male">
-            <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label>
+                    <input type="checkbox" name="found" value="found">
+                    <label for="found">Atrasts</label><br>
+                </div>
 
-            <input type="checkbox" name="female" value="female">
-            <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label>
-        </div>
+                <div class="genderfilter-box">
+                    <h3>Dzimums</h3>
+                    <input type="checkbox" name="male" value="male">
+                    <label for="male"><img src="img\male-purple.svg" class="gender-box"></img></label>
 
-        <a href="news"><button class="btnFilter">Atlasīt</button></a>
-    </aside>
+                    <input type="checkbox" name="female" value="female">
+                    <label for="female"><img src="img\female-purple.svg" class="gender-box"></img></label>
+                </div>
+                <input type="submit" name="btnFilter" class="btnFilter" value="Atlasīt"></input>
 
-<div class="pets-grid">
-    <?php
-    $gender;
-    $veids;
-    foreach ($this->data as $row) {
+            </aside>
+        </form>
+        <div class="pets-grid">
+            <?php
+            $gender;
+            $veids;
+            foreach ($this->data as $row) {
 
-        if($row['dzimums'] == 0){
-            $gender = 'img\male.svg';
-        }  else {
-            $gender = 'img\female.svg';
-        }
+                if ($row['dzimums'] == 0) {
+                    $gender = 'img\male.svg';
+                } else {
+                    $gender = 'img\female.svg';
+                }
 
-        if($row['darijuma_veids'] == 'adoption'){
-            $veids = 'adoptēt';
-        } else if ($row['darijuma_veids'] == 'lost'){
-            $veids = 'pazaudēts';
-        } else {
-            $veids = 'atrasts';
-        }
+                if ($row['darijuma_veids'] == 'adoption') {
+                    $veids = 'adoptēt';
+                } else if ($row['darijuma_veids'] == 'lost') {
+                    $veids = 'pazaudēts';
+                } else {
+                    $veids = 'atrasts';
+                }
 
-        $name = "id{$row['id']}";
-        $$name = $row['id'];
+                $name = "id{$row['id']}";
+                $$name = $row['id'];
 
-        echo "<section class='pet'>
-        <img src='img\animals\\". $row['attels'] . "' alt='Dzivnieka attels' class='animal-pic'/>
+                echo "<section class='pet'>
+        <img src='img\animals\\" . $row['attels'] . "' alt='Dzivnieka attels' class='animal-pic'/>
         <div>
             <div class='format-name'>
                 <p class='purpose'>" . $veids . "</p>
@@ -92,30 +95,31 @@
         <div>
         <p class='animal-description'>" . $row['apraksts'] . "
             <form action='' method='post'>
-            <input type='hidden' name='toMore'  value='" .$row['id'] ."'>
+            <input type='hidden' name='toMore'  value='" . $row['id'] . "'>
             <input class='z' class='more' type='submit' name='$name'  value='Vairāk ...'>
             </form></p><br>";
-        echo "</div>
+                echo "</div>
         <div class='lover'>
             <p class='date'>" . $row['datums'] . "</p>
             <img src='img\heart.svg' class='likes'>
             <p class='likes-count'>" . $row['likes_count'] . "</p>
         </div>
         </section>";
-    }
+            }
 
-    if(isset($_POST['toMore'])) {
-        $_SESSION['advertisment_id'] = $_POST['toMore'];
-        header("Location: advertisment");
-        die();
-     }
+            if (isset($_POST['toMore'])) {
+                $_SESSION['advertisment_id'] = $_POST['toMore'];
+                header("Location: advertisment");
+                die();
+            }
 
-                    // <a href='advertisment' class='more'>... vairāk</a></p><br>
+            // <a href='advertisment' class='more'>... vairāk</a></p><br>
+            
+            ?>
+        </div>
+    </main>
 
-    ?>
-    </div> 
-</main>
-    
-        
+
 </body>
+
 </html>

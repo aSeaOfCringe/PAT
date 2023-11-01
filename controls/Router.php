@@ -13,7 +13,15 @@ class Router {
             case 'news':
                 require_once("models/NewsPage.php");
                 $Page = new NewsPage("Jaunumi");
-                $Page->getData($db);
+                if(!isset($_POST["btnFilter"])){
+                    $Page->getData($db);
+                }else{
+                    if(isset($_POST['adoption']))
+                        $Page->fetchAdoption($db);
+                    else
+                        $Page->getData($db);
+                }
+                
                 break;
 
             case 'advertisment':
@@ -96,8 +104,14 @@ class AuthRouter extends Router{
             case 'news':
                 require_once("models/NewsPage.php");
                 $Page = new NewsPage("Jaunumi");
-                $Page->getData($db);
-                // $Page->fetchAdoption($db);
+                if(!isset($_POST["btnFilter"])){
+                    $Page->getData($db);
+                }else{
+                    if(isset($_POST['adoption']))
+                        $Page->fetchAdoption($db);
+                    else
+                        $Page->getData($db);
+                }
                 break;
                 
             case 'advertismentAdd':

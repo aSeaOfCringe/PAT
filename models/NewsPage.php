@@ -22,7 +22,7 @@
         }
 
         function fetchAdoption($db){
-            $DataQuery = "SELECT * FROM `sludinajumi` WHERE `darijuma_veids` == 'adoption'";
+            $DataQuery = "SELECT * FROM `sludinajumi` WHERE `darijuma_veids` = 'adoption'";
             $ResultQuery = mysqli_query($db->connection, $DataQuery);
 
             $dataArray = [];
