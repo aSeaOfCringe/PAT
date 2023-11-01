@@ -10,11 +10,6 @@
 <body>
     <div class="collumn-one">
         <h1>Rediģēt profilu</h1>
-        
-        <div class="row">
-            <label for="shelter">Patversmes nosaukums:</label>
-            <input type="text" id="shelter" name="shelter" placeholder="Patversmes nosaukums"><br><br>
-        </div>
 
         <div class="row">
             <label for="fName">Pārstāvja vārds:</label>
