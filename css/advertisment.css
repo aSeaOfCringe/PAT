@@ -31,77 +31,33 @@ h1 {
     text-shadow: -0.5rem 0.3rem 0.5rem #aeaeae;
 }
 
-.container {
-    width: 420px;
+.container1 {
+    width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .square {
-    /* background-image: url('dog.jpg'); */
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 650px;
-    height: 400px;
     background-color: white;
     border: 3px solid #C622E1;
     margin: 0 auto;
     margin-top: 1rem;
+    min-height: 300px;
+    width: 45%;
+    
     margin-left: 2rem;
+    
 }
-
-.animal-pic {
-    max-width: 700px;
-    width: auto;
-    max-height: 400px;
-    height: auto;
-}
-
-.square2 {
-    width: 650px;
-    height: 200px;
-    background-color: white;
-    border: 3px solid #C622E1;
+.squareVisible{
     margin: 0 auto;
     margin-top: 1rem;
-    margin-left: 2rem;
-}
-
-.square3
-
-/*.square4*/
-    {
-    width: 600px;
-    height: 200px;
-    background-color: white;
-    border: 3px solid #C622E1;
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-left: 15rem;
-    float: left;
-}
-
-.square4 {
-    width: 600px;
-    height: 200px;
-    background-color: white;
-    border: 3px solid #C622E1;
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-left: 15rem;
-    float: left;
-}
-
-.square5 {
-    width: 600px;
-    height: 200px;
-    background-color: rgb(191, 189, 189);
-    /* Set background color to grey for square5 */
-    border: 3px solid #C622E1;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-left: 15rem;
-    float: left;
+    min-height: 300px;
+    width: 45%;
+    
+    margin-left: 50%;
+    
 }
 
 .text-line {
